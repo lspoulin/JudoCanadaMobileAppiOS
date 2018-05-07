@@ -17,6 +17,9 @@
 		4FB72C1C20A090D800AD3FCB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C1B20A090D800AD3FCB /* logo.png */; };
 		4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */; };
 		4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2020A0B96000AD3FCB /* Post.swift */; };
+		4FB72C2520A0C72A00AD3FCB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */; };
+		4FB72C2720A0C82500AD3FCB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2620A0C82500AD3FCB /* TableViewCell.swift */; };
+		4FB72C2920A0C85B00AD3FCB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */; };
 		BEC8E36157944A64427007A1 /* Pods_JudoCanadaMobileAppiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9057D73AC81908EA95A1CF4 /* Pods_JudoCanadaMobileAppiOSTests.framework */; };
 		E20E13C1866EE90E23CC24B6 /* Pods_JudoCanadaMobileAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE4C0B6DCAC4CC8C1CED8AC /* Pods_JudoCanadaMobileAppiOS.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		4FB72C1B20A090D800AD3FCB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4FB72C2020A0B96000AD3FCB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4FB72C2620A0C82500AD3FCB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = /Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/images/PostTableViewCell.swift; sourceTree = "<absolute>"; };
 		5A80F717F2556C38AAF7B8CF /* Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOSTests/Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BB3CAC334B91DF456D68BE8 /* Pods-JudoCanadaMobileAppiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOSTests/Pods-JudoCanadaMobileAppiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DE4C0B6DCAC4CC8C1CED8AC /* Pods_JudoCanadaMobileAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JudoCanadaMobileAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +105,10 @@
 			children = (
 				4FB72C1D20A090EE00AD3FCB /* images */,
 				4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */,
+				4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */,
+				4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */,
 				4FB72BFA20A08A4700AD3FCB /* ViewController.swift */,
+				4FB72C2620A0C82500AD3FCB /* TableViewCell.swift */,
 				4FB72BFC20A08A4700AD3FCB /* Main.storyboard */,
 				4FB72C0220A08A4900AD3FCB /* Assets.xcassets */,
 				4FB72C0420A08A4900AD3FCB /* LaunchScreen.storyboard */,
@@ -313,9 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
+				4FB72C2520A0C72A00AD3FCB /* TableViewController.swift in Sources */,
 				4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */,
+				4FB72C2920A0C85B00AD3FCB /* PostTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
+				4FB72C2720A0C82500AD3FCB /* TableViewCell.swift in Sources */,
 				4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/images/PostTableViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:JudoCanadaMobileAppiOS.xcodeproj">
    </FileRef>
    <FileRef
