@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */; };
+		4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFA20A08A4700AD3FCB /* ViewController.swift */; };
+		4FB72BFE20A08A4700AD3FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFC20A08A4700AD3FCB /* Main.storyboard */; };
+		4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFF20A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld */; };
+		4FB72C0320A08A4900AD3FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C0220A08A4900AD3FCB /* Assets.xcassets */; };
+		4FB72C0620A08A4900AD3FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C0420A08A4900AD3FCB /* LaunchScreen.storyboard */; };
+		4FB72C1120A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C1020A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FB72C0D20A08A4900AD3FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB72BED20A08A4700AD3FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB72BF420A08A4700AD3FCB;
+			remoteInfo = JudoCanadaMobileAppiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FB72BF520A08A4700AD3FCB /* JudoCanadaMobileAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JudoCanadaMobileAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FB72BFA20A08A4700AD3FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FB72BFD20A08A4700AD3FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FB72C0020A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JudoCanadaMobileAppiOS.xcdatamodel; sourceTree = "<group>"; };
+		4FB72C0220A08A4900AD3FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FB72C0520A08A4900AD3FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FB72C0720A08A4900AD3FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB72C0C20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JudoCanadaMobileAppiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB72C1020A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudoCanadaMobileAppiOSTests.swift; sourceTree = "<group>"; };
+		4FB72C1220A08A4900AD3FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FB72BF220A08A4700AD3FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB72C0920A08A4900AD3FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FB72BEC20A08A4700AD3FCB = {
+			isa = PBXGroup;
+			children = (
+				4FB72BF720A08A4700AD3FCB /* JudoCanadaMobileAppiOS */,
+				4FB72C0F20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests */,
+				4FB72BF620A08A4700AD3FCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FB72BF620A08A4700AD3FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB72BF520A08A4700AD3FCB /* JudoCanadaMobileAppiOS.app */,
+				4FB72C0C20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB72BF720A08A4700AD3FCB /* JudoCanadaMobileAppiOS */ = {
+			isa = PBXGroup;
+			children = (
+				4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */,
+				4FB72BFA20A08A4700AD3FCB /* ViewController.swift */,
+				4FB72BFC20A08A4700AD3FCB /* Main.storyboard */,
+				4FB72C0220A08A4900AD3FCB /* Assets.xcassets */,
+				4FB72C0420A08A4900AD3FCB /* LaunchScreen.storyboard */,
+				4FB72C0720A08A4900AD3FCB /* Info.plist */,
+				4FB72BFF20A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld */,
+			);
+			path = JudoCanadaMobileAppiOS;
+			sourceTree = "<group>";
+		};
+		4FB72C0F20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB72C1020A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.swift */,
+				4FB72C1220A08A4900AD3FCB /* Info.plist */,
+			);
+			path = JudoCanadaMobileAppiOSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB72BF420A08A4700AD3FCB /* JudoCanadaMobileAppiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB72C1520A08A4900AD3FCB /* Build configuration list for PBXNativeTarget "JudoCanadaMobileAppiOS" */;
+			buildPhases = (
+				4FB72BF120A08A4700AD3FCB /* Sources */,
+				4FB72BF220A08A4700AD3FCB /* Frameworks */,
+				4FB72BF320A08A4700AD3FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JudoCanadaMobileAppiOS;
+			productName = JudoCanadaMobileAppiOS;
+			productReference = 4FB72BF520A08A4700AD3FCB /* JudoCanadaMobileAppiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FB72C0B20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB72C1820A08A4900AD3FCB /* Build configuration list for PBXNativeTarget "JudoCanadaMobileAppiOSTests" */;
+			buildPhases = (
+				4FB72C0820A08A4900AD3FCB /* Sources */,
+				4FB72C0920A08A4900AD3FCB /* Frameworks */,
+				4FB72C0A20A08A4900AD3FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB72C0E20A08A4900AD3FCB /* PBXTargetDependency */,
+			);
+			name = JudoCanadaMobileAppiOSTests;
+			productName = JudoCanadaMobileAppiOSTests;
+			productReference = 4FB72C0C20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FB72BED20A08A4700AD3FCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Louis-Simon Poulin";
+				TargetAttributes = {
+					4FB72BF420A08A4700AD3FCB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4FB72C0B20A08A4900AD3FCB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4FB72BF420A08A4700AD3FCB;
+					};
+				};
+			};
+			buildConfigurationList = 4FB72BF020A08A4700AD3FCB /* Build configuration list for PBXProject "JudoCanadaMobileAppiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FB72BEC20A08A4700AD3FCB;
+			productRefGroup = 4FB72BF620A08A4700AD3FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB72BF420A08A4700AD3FCB /* JudoCanadaMobileAppiOS */,
+				4FB72C0B20A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FB72BF320A08A4700AD3FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB72C0620A08A4900AD3FCB /* LaunchScreen.storyboard in Resources */,
+				4FB72C0320A08A4900AD3FCB /* Assets.xcassets in Resources */,
+				4FB72BFE20A08A4700AD3FCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB72C0A20A08A4900AD3FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FB72BF120A08A4700AD3FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */,
+				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
+				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB72C0820A08A4900AD3FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB72C1120A08A4900AD3FCB /* JudoCanadaMobileAppiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB72C0E20A08A4900AD3FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB72BF420A08A4700AD3FCB /* JudoCanadaMobileAppiOS */;
+			targetProxy = 4FB72C0D20A08A4900AD3FCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FB72BFC20A08A4700AD3FCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB72BFD20A08A4700AD3FCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FB72C0420A08A4900AD3FCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB72C0520A08A4900AD3FCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FB72C1320A08A4900AD3FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FB72C1420A08A4900AD3FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FB72C1620A08A4900AD3FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
+				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FB72C1720A08A4900AD3FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
+				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FB72C1920A08A4900AD3FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
+				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JudoCanadaMobileAppiOS.app/JudoCanadaMobileAppiOS";
+			};
+			name = Debug;
+		};
+		4FB72C1A20A08A4900AD3FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
+				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JudoCanadaMobileAppiOS.app/JudoCanadaMobileAppiOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FB72BF020A08A4700AD3FCB /* Build configuration list for PBXProject "JudoCanadaMobileAppiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB72C1320A08A4900AD3FCB /* Debug */,
+				4FB72C1420A08A4900AD3FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB72C1520A08A4900AD3FCB /* Build configuration list for PBXNativeTarget "JudoCanadaMobileAppiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB72C1620A08A4900AD3FCB /* Debug */,
+				4FB72C1720A08A4900AD3FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB72C1820A08A4900AD3FCB /* Build configuration list for PBXNativeTarget "JudoCanadaMobileAppiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB72C1920A08A4900AD3FCB /* Debug */,
+				4FB72C1A20A08A4900AD3FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FB72BFF20A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FB72C0020A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodel */,
+			);
+			currentVersion = 4FB72C0020A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodel */;
+			path = JudoCanadaMobileAppiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4FB72BED20A08A4700AD3FCB /* Project object */;
+}
