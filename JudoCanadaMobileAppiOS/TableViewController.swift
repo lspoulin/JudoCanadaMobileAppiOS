@@ -97,14 +97,23 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let view:ViewController = segue.destination as! ViewController else {
+            return
+        }
+        if let indexPath = tableView.indexPathForSelectedRow{
+            let selectedRow = indexPath.row
+           view.post = posts[selectedRow]
+        }
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

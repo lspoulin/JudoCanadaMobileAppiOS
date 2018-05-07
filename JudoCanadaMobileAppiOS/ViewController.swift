@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
-
+class ViewController: UIViewController {
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var textContent: UITextView!
+    
+    var post:Post?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let apiManager = ApiManager<Post>()
-        apiManager.getMappableArray(getURL: apiManager.geAllPostsURL()!, completion: display)
+        display()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,18 +25,26 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func display(myPosts:Any?)->(){
-        guard let posts:[Post] = myPosts as? [Post] else{
-            print("No Post array")
+    func display(){
+        guard let mypost:Post = post else{
+            print("No Post")
             return
         }
-        for post in posts{
-            print ("\(post.title)")
-        }
+        labelTitle.text = mypost.title        
+        textContent.text = mypost.content.htmlToString
     }
-    
-    
-
-
 }
 
+extension String {
+    var htmlToAttributedString: NSAttributedString? {
+        guard let data = data(using: .unicode) else { return NSAttributedString() }
+        do {
+            return try NSAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType:  NSAttributedString.DocumentType.html], documentAttributes: nil)
+        } catch {
+            return NSAttributedString()
+        }
+    }
+    var htmlToString: String {
+        return htmlToAttributedString?.string ?? ""
+    }
+}

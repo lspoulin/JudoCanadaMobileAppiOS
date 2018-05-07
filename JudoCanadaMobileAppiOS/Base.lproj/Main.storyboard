@@ -1,69 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYg-IU-rWb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4dZ-fG-sng">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="ndV-5Z-auW">
+        <!--Nouvelles-->
+        <scene sceneID="ePt-Qn-wc2">
             <objects>
-                <tableViewController id="nYg-IU-rWb" customClass="TableViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BRz-lY-H96">
+                <tableViewController id="PoG-1M-dSr" customClass="TableViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eHT-C7-7ZK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostIndentifier" rowHeight="103" id="6bl-A4-ZQG" customClass="PostTableViewCell" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="103"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostIndentifier" rowHeight="94" id="Z85-84-aF5" customClass="PostTableViewCell" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6bl-A4-ZQG" id="dQv-sX-ne3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z85-84-aF5" id="oPD-PP-xGy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THT-Q5-u6G">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THT-Q5-u6G">
+                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7G-y1-F0g">
-                                            <rect key="frame" x="16" y="22" width="343" height="70"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7G-y1-F0g">
+                                            <rect key="frame" x="16" y="23" width="343" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Z7G-y1-F0g" firstAttribute="top" secondItem="THT-Q5-u6G" secondAttribute="bottom" constant="1" id="5Ag-6I-fgD"/>
-                                        <constraint firstItem="THT-Q5-u6G" firstAttribute="leading" secondItem="dQv-sX-ne3" secondAttribute="leading" constant="16" id="9Hg-ex-IeA"/>
-                                        <constraint firstAttribute="bottom" secondItem="Z7G-y1-F0g" secondAttribute="bottom" constant="1" id="9wc-oO-sLY"/>
-                                        <constraint firstItem="Z7G-y1-F0g" firstAttribute="leading" secondItem="dQv-sX-ne3" secondAttribute="leading" constant="16" id="NQr-9d-tho"/>
-                                        <constraint firstAttribute="trailing" secondItem="THT-Q5-u6G" secondAttribute="trailing" constant="16" id="VB8-aX-oYH"/>
-                                        <constraint firstItem="THT-Q5-u6G" firstAttribute="top" secondItem="dQv-sX-ne3" secondAttribute="top" id="Won-6s-cMJ"/>
-                                        <constraint firstItem="Z7G-y1-F0g" firstAttribute="top" secondItem="THT-Q5-u6G" secondAttribute="bottom" constant="1" id="jr9-iD-h33"/>
-                                        <constraint firstAttribute="trailing" secondItem="Z7G-y1-F0g" secondAttribute="trailing" constant="16" id="paG-6f-Wkh"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="labelExerpt" destination="Z7G-y1-F0g" id="pFR-sW-6i7"/>
-                                    <outlet property="labelTitle" destination="THT-Q5-u6G" id="DX4-B8-car"/>
+                                    <outlet property="labelExerpt" destination="Z7G-y1-F0g" id="qKe-pF-KeH"/>
+                                    <outlet property="labelTitle" destination="THT-Q5-u6G" id="l46-E0-qOf"/>
+                                    <segue destination="AmW-Xj-gkx" kind="show" id="DYf-Zk-L1V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="nYg-IU-rWb" id="kRk-1y-VBD"/>
-                            <outlet property="delegate" destination="nYg-IU-rWb" id="w1Q-os-rMF"/>
+                            <outlet property="dataSource" destination="PoG-1M-dSr" id="TrJ-HV-cIj"/>
+                            <outlet property="delegate" destination="PoG-1M-dSr" id="h5A-Xh-4cb"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Nouvelles" id="I70-Sl-7T9"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tNd-bj-xSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDi-gx-1My" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701.60000000000002" y="53.523238380809602"/>
+            <point key="canvasLocation" x="1189.5999999999999" y="685.90704647676171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pyZ-a1-nEX">
+            <objects>
+                <viewController id="AmW-Xj-gkx" customClass="ViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ih-Pr-7n9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfL-7Q-ovD">
+                                <rect key="frame" x="16" y="64" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yqv-cj-Ee0">
+                                <rect key="frame" x="16" y="93" width="343" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qVs-7z-y8T"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelTitle" destination="sfL-7Q-ovD" id="4ph-p8-BKq"/>
+                        <outlet property="textContent" destination="yqv-cj-Ee0" id="fQc-Vs-MP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hW9-u4-Dq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064.8000000000002" y="685.90704647676171"/>
+        </scene>
+        <!--Judo Canada-->
+        <scene sceneID="nWP-Yw-YM0">
+            <objects>
+                <navigationController title="Judo Canada" id="4dZ-fG-sng" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mWV-wB-Lyp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PoG-1M-dSr" kind="relationship" relationship="rootViewController" id="uFH-md-jh9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWL-ZN-Aq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="686"/>
         </scene>
     </scenes>
 </document>
