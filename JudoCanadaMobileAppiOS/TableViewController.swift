@@ -9,18 +9,30 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    @IBOutlet weak var progressBar: UIProgressView!
     var posts = [Post]()
+    var time:Float = 0.0
+    var timer:Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let apiManager:ApiManager = ApiManager<Post>()
-        apiManager.getMappableArray(getURL: apiManager.geAllPostsURL()!, completion: display)
-        // Uncomment the following line to preserve selection between presentations
+        getPosts()
+         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func getPosts() {
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.setProgress), userInfo: nil, repeats: true)
+        let apiHelper:ApiHelper = ApiHelper()
+        apiHelper.getPosts(completion: display)
+    }
+    
+    @objc func setProgress() {
+        time += 0.01
+        self.progressBar.progress = time.truncatingRemainder(dividingBy: 1.0)
     }
     
     func display(myPosts:Any?)->(){
@@ -30,9 +42,10 @@ class TableViewController: UITableViewController {
         }
         self.posts = posts
         self.tableView.reloadData()
+        self.timer?.invalidate()
+        self.progressBar.isHidden = true
     }
-    
-
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

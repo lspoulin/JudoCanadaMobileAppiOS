@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CC20A218060048FB1F /* ApiHelper.swift */; };
+		4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CE20A21D860048FB1F /* userdix.png */; };
+		4F3BC5DB20A21D890048FB1F /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CF20A21D870048FB1F /* fav.png */; };
+		4F3BC5DC20A21D890048FB1F /* preference.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D020A21D870048FB1F /* preference.png */; };
+		4F3BC5DD20A21D890048FB1F /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D120A21D870048FB1F /* search.png */; };
+		4F3BC5DE20A21D890048FB1F /* usertrente.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D220A21D870048FB1F /* usertrente.png */; };
+		4F3BC5DF20A21D890048FB1F /* userquinze.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D320A21D880048FB1F /* userquinze.png */; };
+		4F3BC5E020A21D890048FB1F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D420A21D880048FB1F /* back.png */; };
+		4F3BC5E120A21D890048FB1F /* usercinq.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D520A21D880048FB1F /* usercinq.png */; };
+		4F3BC5E220A21D890048FB1F /* srch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D620A21D880048FB1F /* srch.png */; };
+		4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D720A21D880048FB1F /* usercinqante.png */; };
+		4F3BC5E420A21D890048FB1F /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D820A21D880048FB1F /* favorite.png */; };
+		4F3BC5E520A21D890048FB1F /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D920A21D890048FB1F /* pref.png */; };
 		4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */; };
 		4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFA20A08A4700AD3FCB /* ViewController.swift */; };
 		4FB72BFE20A08A4700AD3FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFC20A08A4700AD3FCB /* Main.storyboard */; };
@@ -36,6 +49,19 @@
 
 /* Begin PBXFileReference section */
 		02F542E0685F9A9A3077CBC9 /* Pods-JudoCanadaMobileAppiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOS/Pods-JudoCanadaMobileAppiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4F3BC5CC20A218060048FB1F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		4F3BC5CE20A21D860048FB1F /* userdix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userdix.png; sourceTree = "<group>"; };
+		4F3BC5CF20A21D870048FB1F /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
+		4F3BC5D020A21D870048FB1F /* preference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preference.png; sourceTree = "<group>"; };
+		4F3BC5D120A21D870048FB1F /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		4F3BC5D220A21D870048FB1F /* usertrente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usertrente.png; sourceTree = "<group>"; };
+		4F3BC5D320A21D880048FB1F /* userquinze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userquinze.png; sourceTree = "<group>"; };
+		4F3BC5D420A21D880048FB1F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		4F3BC5D520A21D880048FB1F /* usercinq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usercinq.png; sourceTree = "<group>"; };
+		4F3BC5D620A21D880048FB1F /* srch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = srch.png; sourceTree = "<group>"; };
+		4F3BC5D720A21D880048FB1F /* usercinqante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usercinqante.png; sourceTree = "<group>"; };
+		4F3BC5D820A21D880048FB1F /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		4F3BC5D920A21D890048FB1F /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
 		4FB72BF520A08A4700AD3FCB /* JudoCanadaMobileAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JudoCanadaMobileAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FB72BFA20A08A4700AD3FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +153,18 @@
 		4FB72C1D20A090EE00AD3FCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4F3BC5D420A21D880048FB1F /* back.png */,
+				4F3BC5CF20A21D870048FB1F /* fav.png */,
+				4F3BC5D820A21D880048FB1F /* favorite.png */,
+				4F3BC5D920A21D890048FB1F /* pref.png */,
+				4F3BC5D020A21D870048FB1F /* preference.png */,
+				4F3BC5D120A21D870048FB1F /* search.png */,
+				4F3BC5D620A21D880048FB1F /* srch.png */,
+				4F3BC5D520A21D880048FB1F /* usercinq.png */,
+				4F3BC5D720A21D880048FB1F /* usercinqante.png */,
+				4F3BC5CE20A21D860048FB1F /* userdix.png */,
+				4F3BC5D320A21D880048FB1F /* userquinze.png */,
+				4F3BC5D220A21D870048FB1F /* usertrente.png */,
 				4FB72C1B20A090D800AD3FCB /* logo.png */,
 			);
 			path = images;
@@ -156,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */,
+				4F3BC5CC20A218060048FB1F /* ApiHelper.swift */,
 				4FB72C2A20A0EDE200AD3FCB /* ColorTheme.swift */,
 			);
 			name = Utilities;
@@ -273,9 +312,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3BC5DF20A21D890048FB1F /* userquinze.png in Resources */,
+				4F3BC5E420A21D890048FB1F /* favorite.png in Resources */,
 				4FB72C1C20A090D800AD3FCB /* logo.png in Resources */,
+				4F3BC5DC20A21D890048FB1F /* preference.png in Resources */,
 				4FB72C0620A08A4900AD3FCB /* LaunchScreen.storyboard in Resources */,
+				4F3BC5DD20A21D890048FB1F /* search.png in Resources */,
+				4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */,
+				4F3BC5E120A21D890048FB1F /* usercinq.png in Resources */,
+				4F3BC5E520A21D890048FB1F /* pref.png in Resources */,
+				4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */,
+				4F3BC5DB20A21D890048FB1F /* fav.png in Resources */,
+				4F3BC5E220A21D890048FB1F /* srch.png in Resources */,
+				4F3BC5E020A21D890048FB1F /* back.png in Resources */,
 				4FB72C0320A08A4900AD3FCB /* Assets.xcassets in Resources */,
+				4F3BC5DE20A21D890048FB1F /* usertrente.png in Resources */,
 				4FB72BFE20A08A4700AD3FCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +407,7 @@
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
 				4FB72C2520A0C72A00AD3FCB /* TableViewController.swift in Sources */,
 				4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */,
+				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
 				4FB72C2920A0C85B00AD3FCB /* PostTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
