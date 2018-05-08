@@ -69,7 +69,7 @@ class TableViewController: UITableViewController {
         let post = cell as! PostTableViewCell
         
         post.labelTitle.text = posts[indexPath.row].title
-        post.labelExerpt.text = posts[indexPath.row].exerpt
+        post.labelExerpt.text = posts[indexPath.row].excerpt.htmlToString
     
         return cell
     }

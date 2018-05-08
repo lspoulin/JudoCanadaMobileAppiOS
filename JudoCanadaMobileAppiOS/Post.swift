@@ -15,7 +15,7 @@ struct Post:Mappable {
     var dateGMT:String = ""
     var title:String = ""
     var content:String = ""
-    var exerpt:String = ""
+    var excerpt:String = ""
     
     init(){
         
@@ -25,7 +25,7 @@ struct Post:Mappable {
        id <- map["id"]
         title    <- map["title.rendered"]
         content <- map["content.rendered"]
-        exerpt <- map["exerpt.rendered"]
+        excerpt <- map["excerpt.rendered"]
         date <- map["date"]
         dateGMT <- map["date_gmt"]
     }
@@ -35,7 +35,7 @@ struct Post:Mappable {
         id <- map["id"]
         title    <- map["title.rendered"]
         content <- map["content.rendered"]
-        exerpt <- map["exerpt.rendered"]
+        excerpt <- map["excerpt.rendered"]
         date <- map["date"]
         dateGMT <- map["date_gmt"]
         
