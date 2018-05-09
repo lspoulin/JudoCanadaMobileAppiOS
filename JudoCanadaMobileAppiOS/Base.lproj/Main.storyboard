@@ -14,7 +14,7 @@
         <!--News Feed-->
         <scene sceneID="ePt-Qn-wc2">
             <objects>
-                <tableViewController id="PoG-1M-dSr" customClass="TableViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PoG-1M-dSr" customClass="PostTableViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eHT-C7-7ZK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,11 +147,11 @@
             </objects>
             <point key="canvasLocation" x="1665" y="1450"/>
         </scene>
-        <!--Favorite-->
+        <!--Stats-->
         <scene sceneID="wrN-mA-Iem">
             <objects>
                 <navigationController id="Csd-O8-GT4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorite" image="fav.png" id="mdk-nq-Ort"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="stats.png" id="mdk-nq-Ort"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MAV-2M-lcr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -168,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="713" y="1450"/>
         </scene>
-        <!--Preferences-->
+        <!--Video-->
         <scene sceneID="p2t-JS-wzz">
             <objects>
                 <navigationController id="6dz-CZ-k0G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Preferences" image="pref.png" id="tYq-Aa-qqt"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="video.png" id="tYq-Aa-qqt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S8x-13-Mzi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -192,7 +192,7 @@
         <!--Post-->
         <scene sceneID="pyZ-a1-nEX">
             <objects>
-                <viewController title="Post" id="AmW-Xj-gkx" customClass="ViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Post" id="AmW-Xj-gkx" customClass="PostViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ih-Pr-7n9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +259,7 @@
         <scene sceneID="nWP-Yw-YM0">
             <objects>
                 <navigationController title="Judo Canada" id="4dZ-fG-sng" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="srch.png" landscapeImage="fav.png" largeContentSizeImage="fav.png" id="fbl-en-mx5"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="news.png" landscapeImage="fav.png" largeContentSizeImage="fav.png" id="fbl-en-mx5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mWV-wB-Lyp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -284,7 +284,8 @@
     </scenes>
     <resources>
         <image name="fav.png" width="40" height="40"/>
-        <image name="pref.png" width="40" height="40"/>
-        <image name="srch.png" width="40" height="40"/>
+        <image name="news.png" width="40" height="40"/>
+        <image name="stats.png" width="40" height="40"/>
+        <image name="video.png" width="40" height="40"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class PostTableViewController: UITableViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     var posts = [Post]()
     var time:Float = 0.0
@@ -115,7 +115,7 @@ class TableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let view:ViewController = segue.destination as! ViewController else {
+        guard let view:PostViewController = segue.destination as! PostViewController else {
             return
         }
         if let indexPath = tableView.indexPathForSelectedRow{

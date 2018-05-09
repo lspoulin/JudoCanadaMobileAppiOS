@@ -20,8 +20,13 @@
 		4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D720A21D880048FB1F /* usercinqante.png */; };
 		4F3BC5E420A21D890048FB1F /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D820A21D880048FB1F /* favorite.png */; };
 		4F3BC5E520A21D890048FB1F /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D920A21D890048FB1F /* pref.png */; };
+		4FB20A4D20A39954004FBB81 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */; };
+		4FB20A5320A39A56004FBB81 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5020A39A55004FBB81 /* video.png */; };
+		4FB20A5420A39A56004FBB81 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5120A39A56004FBB81 /* stats.png */; };
+		4FB20A5520A39A56004FBB81 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5220A39A56004FBB81 /* news.png */; };
+		4FB20A5720A39AF2004FBB81 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB20A5620A39AF2004FBB81 /* Video.swift */; };
 		4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */; };
-		4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFA20A08A4700AD3FCB /* ViewController.swift */; };
+		4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFA20A08A4700AD3FCB /* PostViewController.swift */; };
 		4FB72BFE20A08A4700AD3FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFC20A08A4700AD3FCB /* Main.storyboard */; };
 		4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72BFF20A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld */; };
 		4FB72C0320A08A4900AD3FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C0220A08A4900AD3FCB /* Assets.xcassets */; };
@@ -30,8 +35,7 @@
 		4FB72C1C20A090D800AD3FCB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C1B20A090D800AD3FCB /* logo.png */; };
 		4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */; };
 		4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2020A0B96000AD3FCB /* Post.swift */; };
-		4FB72C2520A0C72A00AD3FCB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */; };
-		4FB72C2920A0C85B00AD3FCB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */; };
+		4FB72C2520A0C72A00AD3FCB /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2420A0C72A00AD3FCB /* PostTableViewController.swift */; };
 		4FB72C2B20A0EDE200AD3FCB /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB72C2A20A0EDE200AD3FCB /* ColorTheme.swift */; };
 		BEC8E36157944A64427007A1 /* Pods_JudoCanadaMobileAppiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9057D73AC81908EA95A1CF4 /* Pods_JudoCanadaMobileAppiOSTests.framework */; };
 		E20E13C1866EE90E23CC24B6 /* Pods_JudoCanadaMobileAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE4C0B6DCAC4CC8C1CED8AC /* Pods_JudoCanadaMobileAppiOS.framework */; };
@@ -62,9 +66,14 @@
 		4F3BC5D720A21D880048FB1F /* usercinqante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usercinqante.png; sourceTree = "<group>"; };
 		4F3BC5D820A21D880048FB1F /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		4F3BC5D920A21D890048FB1F /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
+		4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = /Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/PostTableViewCell.swift; sourceTree = "<absolute>"; };
+		4FB20A5020A39A55004FBB81 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/video.png; sourceTree = "<group>"; };
+		4FB20A5120A39A56004FBB81 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/stats.png; sourceTree = "<group>"; };
+		4FB20A5220A39A56004FBB81 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		4FB20A5620A39AF2004FBB81 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4FB72BF520A08A4700AD3FCB /* JudoCanadaMobileAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JudoCanadaMobileAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FB72BFA20A08A4700AD3FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FB72BFA20A08A4700AD3FCB /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		4FB72BFD20A08A4700AD3FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FB72C0020A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JudoCanadaMobileAppiOS.xcdatamodel; sourceTree = "<group>"; };
 		4FB72C0220A08A4900AD3FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,8 +85,7 @@
 		4FB72C1B20A090D800AD3FCB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4FB72C2020A0B96000AD3FCB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = /Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/images/PostTableViewCell.swift; sourceTree = "<absolute>"; };
+		4FB72C2420A0C72A00AD3FCB /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		4FB72C2A20A0EDE200AD3FCB /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		5A80F717F2556C38AAF7B8CF /* Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOSTests/Pods-JudoCanadaMobileAppiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BB3CAC334B91DF456D68BE8 /* Pods-JudoCanadaMobileAppiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOSTests/Pods-JudoCanadaMobileAppiOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FB20A5820A39B77004FBB81 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */,
+				4FB72C2420A0C72A00AD3FCB /* PostTableViewController.swift */,
+				4FB72BFA20A08A4700AD3FCB /* PostViewController.swift */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		4FB20A5920A39B8E004FBB81 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
 		4FB72BEC20A08A4700AD3FCB = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +178,9 @@
 		4FB72C1D20A090EE00AD3FCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4FB20A5220A39A56004FBB81 /* news.png */,
+				4FB20A5120A39A56004FBB81 /* stats.png */,
+				4FB20A5020A39A55004FBB81 /* video.png */,
 				4F3BC5D420A21D880048FB1F /* back.png */,
 				4F3BC5CF20A21D870048FB1F /* fav.png */,
 				4F3BC5D820A21D880048FB1F /* favorite.png */,
@@ -182,10 +210,9 @@
 		4FB72C3020A0F41F00AD3FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FB20A5920A39B8E004FBB81 /* Video */,
+				4FB20A5820A39B77004FBB81 /* Post */,
 				4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */,
-				4FB72C2820A0C85B00AD3FCB /* PostTableViewCell.swift */,
-				4FB72C2420A0C72A00AD3FCB /* TableViewController.swift */,
-				4FB72BFA20A08A4700AD3FCB /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -203,6 +230,7 @@
 		4FB72C3320A0F4A400AD3FCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FB20A5620A39AF2004FBB81 /* Video.swift */,
 				4FB72C2020A0B96000AD3FCB /* Post.swift */,
 			);
 			name = Model;
@@ -313,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3BC5DF20A21D890048FB1F /* userquinze.png in Resources */,
+				4FB20A5420A39A56004FBB81 /* stats.png in Resources */,
 				4F3BC5E420A21D890048FB1F /* favorite.png in Resources */,
 				4FB72C1C20A090D800AD3FCB /* logo.png in Resources */,
 				4F3BC5DC20A21D890048FB1F /* preference.png in Resources */,
@@ -322,6 +351,8 @@
 				4F3BC5E120A21D890048FB1F /* usercinq.png in Resources */,
 				4F3BC5E520A21D890048FB1F /* pref.png in Resources */,
 				4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */,
+				4FB20A5320A39A56004FBB81 /* video.png in Resources */,
+				4FB20A5520A39A56004FBB81 /* news.png in Resources */,
 				4F3BC5DB20A21D890048FB1F /* fav.png in Resources */,
 				4F3BC5E220A21D890048FB1F /* srch.png in Resources */,
 				4F3BC5E020A21D890048FB1F /* back.png in Resources */,
@@ -405,14 +436,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
-				4FB72C2520A0C72A00AD3FCB /* TableViewController.swift in Sources */,
-				4FB72BFB20A08A4700AD3FCB /* ViewController.swift in Sources */,
+				4FB72C2520A0C72A00AD3FCB /* PostTableViewController.swift in Sources */,
+				4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
-				4FB72C2920A0C85B00AD3FCB /* PostTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
+				4FB20A4D20A39954004FBB81 /* PostTableViewCell.swift in Sources */,
 				4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */,
 				4FB72C2B20A0EDE200AD3FCB /* ColorTheme.swift in Sources */,
+				4FB20A5720A39AF2004FBB81 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

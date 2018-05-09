@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PostViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var textContent: UITextView!
     
