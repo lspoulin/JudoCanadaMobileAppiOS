@@ -14,10 +14,17 @@ import ObjectMapper
 let baseURL = "http://judocanada.org/wp-json/"
 let getPostEndpoint = "wp/v2/posts"
 
+let videoBaseURL = "https://api.dailymotion.com/"
+let getVideoEndPoint = "user/JudoCanada/videos"
+
 class ApiManager<M:Mappable>{
     
     public func geAllPostsURL() -> String?{
         return baseURL+getPostEndpoint
+    }
+    
+    public func getVideoList() -> String?{
+        return videoBaseURL+getVideoEndPoint;
     }
     
     public func getMappable(getURL:String, completion: @escaping ( _ mappable:Any) -> ()){
