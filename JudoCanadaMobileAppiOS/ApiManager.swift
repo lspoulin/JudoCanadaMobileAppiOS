@@ -43,6 +43,7 @@ class ApiManager<M:Mappable>{
         Alamofire.request(getURL).responseJSON { response in
             if response.error != nil{
                 print("\(String(describing: response.error))")
+                completion(AnyClass.self)
                 return
             }
             if response.result.isSuccess {
@@ -70,6 +71,7 @@ class ApiManager<M:Mappable>{
         Alamofire.request(getURL).responseJSON { response in
             if response.error != nil{
                 print("\(String(describing: response.error))")
+                completion(AnyClass.self)
                 return
             }
             if response.result.isSuccess {

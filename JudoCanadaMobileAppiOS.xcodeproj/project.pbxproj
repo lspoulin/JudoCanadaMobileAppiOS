@@ -20,6 +20,8 @@
 		4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D720A21D880048FB1F /* usercinqante.png */; };
 		4F3BC5E420A21D890048FB1F /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D820A21D880048FB1F /* favorite.png */; };
 		4F3BC5E520A21D890048FB1F /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D920A21D890048FB1F /* pref.png */; };
+		4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */; };
+		4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */; };
 		4FB20A4D20A39954004FBB81 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */; };
 		4FB20A5320A39A56004FBB81 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5020A39A55004FBB81 /* video.png */; };
 		4FB20A5420A39A56004FBB81 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5120A39A56004FBB81 /* stats.png */; };
@@ -66,6 +68,8 @@
 		4F3BC5D720A21D880048FB1F /* usercinqante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usercinqante.png; sourceTree = "<group>"; };
 		4F3BC5D820A21D880048FB1F /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		4F3BC5D920A21D890048FB1F /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
+		4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = /Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/PostTableViewCell.swift; sourceTree = "<absolute>"; };
 		4FB20A5020A39A55004FBB81 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/video.png; sourceTree = "<group>"; };
 		4FB20A5120A39A56004FBB81 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/stats.png; sourceTree = "<group>"; };
@@ -114,6 +118,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FB1CB2B20A62EE900C4EA75 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stats;
+			sourceTree = "<group>";
+		};
 		4FB20A5820A39B77004FBB81 /* Post */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +138,8 @@
 		4FB20A5920A39B8E004FBB81 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */,
+				4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */,
 			);
 			name = Video;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 		4FB72C3020A0F41F00AD3FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FB1CB2B20A62EE900C4EA75 /* Stats */,
 				4FB20A5920A39B8E004FBB81 /* Video */,
 				4FB20A5820A39B77004FBB81 /* Post */,
 				4FB72BF820A08A4700AD3FCB /* AppDelegate.swift */,
@@ -435,10 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */,
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
 				4FB72C2520A0C72A00AD3FCB /* PostTableViewController.swift in Sources */,
 				4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
+				4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
 				4FB20A4D20A39954004FBB81 /* PostTableViewCell.swift in Sources */,

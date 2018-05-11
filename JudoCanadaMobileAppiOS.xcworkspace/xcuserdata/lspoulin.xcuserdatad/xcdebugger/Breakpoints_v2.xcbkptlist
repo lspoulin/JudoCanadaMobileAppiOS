@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JudoCanadaMobileAppiOS/ApiManager.swift"
-            timestampString = "547757554.687096"
+            timestampString = "547761870.85032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "geAllPostsURL()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JudoCanadaMobileAppiOS/ApiManager.swift"
-            timestampString = "547757554.687475"
+            timestampString = "547761870.850458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "geAllPostsURL()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getVideoList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

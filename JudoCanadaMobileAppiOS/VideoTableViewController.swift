@@ -1,40 +1,39 @@
 //
-//  TableViewController.swift
+//  VideoTableViewController.swift
 //  JudoCanadaMobileAppiOS
 //
-//  Created by Louis-Simon Poulin on 2018-05-07.
+//  Created by Louis-Simon Poulin on 2018-05-11.
 //  Copyright © 2018 Louis-Simon Poulin. All rights reserved.
 //
 
 import UIKit
 
-class PostTableViewController: UITableViewController {
-    @IBOutlet weak var progressBar: UIProgressView!
-    var posts = [Post]()
+class VideoTableViewController: UITableViewController {
+    var videoList:VideoList = VideoList()
     var time:Float = 0.0
     var timer:Timer?
-    
+
+    @IBOutlet weak var progressBar: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getPosts()
+        getVideoList()
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.contentMode = .scaleAspectFit
         let image = UIImage(named: "logo.png")
         imageView.image = image
         navigationItem.titleView = imageView
-        
-         // Uncomment the following line to preserve selection between presentations
+        // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func getPosts() {
+    func getVideoList() {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.setProgress), userInfo: nil, repeats: true)
         let apiHelper:ApiHelper = ApiHelper()
-        apiHelper.getPosts(completion: display)
+        apiHelper.getVideos(completion: display)
     }
     
     @objc func setProgress() {
@@ -42,17 +41,17 @@ class PostTableViewController: UITableViewController {
         self.progressBar.progress = time.truncatingRemainder(dividingBy: 1.0)
     }
     
-    func display(myPosts:Any?)->(){
-        guard let posts:[Post] = myPosts as? [Post] else{
-            print("No Post array")
+    func display(myList:Any?)->(){
+        guard let videoList:VideoList = myList as? VideoList else{
+            print("No Video list")
             return
         }
-        self.posts = posts
+        self.videoList = videoList
         self.tableView.reloadData()
         self.timer?.invalidate()
         self.progressBar.isHidden = true
     }
- 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,23 +60,21 @@ class PostTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-       
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return posts.count
+        return (videoList.videos?.count)!
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
-        let post = cell as! PostTableViewCell
-        
-        post.labelTitle.text = posts[indexPath.row].title
-        post.labelExerpt.text = posts[indexPath.row].excerpt.htmlToString
-    
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoListCell", for: indexPath) as! VideoTableViewCell
+
+        cell.title.text = videoList.videos![indexPath.row].title
+
         return cell
     }
     
@@ -117,23 +114,14 @@ class PostTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let view:PostViewController = segue.destination as! PostViewController else {
-            return
-        }
-        if let indexPath = tableView.indexPathForSelectedRow{
-            let selectedRow = indexPath.row
-           view.post = posts[selectedRow]
-        }
-        
-        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }
