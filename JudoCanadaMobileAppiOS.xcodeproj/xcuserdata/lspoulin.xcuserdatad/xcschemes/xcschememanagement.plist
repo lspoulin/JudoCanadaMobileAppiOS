@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JudoCanadaMobileAppiOS.xcscheme</key>
+		<key>Debug JudoCanadaMobileAppiOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>Release JudoCanadaMobileAppiOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4FB72BF420A08A4700AD3FCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FB72C0B20A08A4900AD3FCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

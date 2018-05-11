@@ -11,20 +11,31 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-let baseURL = "http://judocanada.org/wp-json/"
-let getPostEndpoint = "wp/v2/posts"
-
-let videoBaseURL = "https://api.dailymotion.com/"
+let getPostEndpoint = "posts"
 let getVideoEndPoint = "user/JudoCanada/videos"
+let getUserEndPoint = "users/"
 
 class ApiManager<M:Mappable>{
     
     public func geAllPostsURL() -> String?{
-        return baseURL+getPostEndpoint
+        if let value = ProcessInfo.processInfo.environment["BASE_URL"] {
+            return value+getPostEndpoint;
+        }
+        return ""
     }
     
     public func getVideoList() -> String?{
-        return videoBaseURL+getVideoEndPoint;
+        if let value = ProcessInfo.processInfo.environment["VIDEO_BASE_URL"] {
+            return value+getVideoEndPoint;
+        }
+        return ""
+    }
+    
+    public func getUserList()->String?{
+        if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
+            return value+getUserEndPoint;
+        }
+        return ""
     }
     
     public func getMappable(getURL:String, completion: @escaping ( _ mappable:Any) -> ()){
@@ -37,7 +48,7 @@ class ApiManager<M:Mappable>{
             if response.result.isSuccess {
                 print("This is a success")
                 guard let value  = response.value else {return}
-                //print(value as Any)
+            
                 
                 guard let mappableObject = Mapper<M>().map(JSONObject: value) else{
                     print("Not a mappable")
@@ -64,8 +75,8 @@ class ApiManager<M:Mappable>{
             if response.result.isSuccess {
                 print("This is a success")
                 guard let value  = response.value else {return}
-                //print(value as Any)
-                 var mappableObjects:[M] = [M]()
+                print(value as Any)
+                var mappableObjects:[M] = [M]()
                 let jsonWithArrayRoot = try? JSONSerialization.jsonObject(with: response.data!, options: [])
                 guard let array = jsonWithArrayRoot as? [AnyObject] else { return }
                 for json in array{
