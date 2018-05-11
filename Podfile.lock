@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.7.2)
+  - DailymotionPlayerSDK (3.7.4)
   - ObjectMapper (3.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - DailymotionPlayerSDK
   - ObjectMapper (~> 3.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - DailymotionPlayerSDK
     - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  DailymotionPlayerSDK: afd14da75f14625c0b37dcb6c6db514a73075002
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
 
-PODFILE CHECKSUM: 78404889bdf13cbf7edb6f92d333f5369c80b446
+PODFILE CHECKSUM: 2b26c9c9555058427dbb5e93aa5502e2085a0eed
 
 COCOAPODS: 1.5.0

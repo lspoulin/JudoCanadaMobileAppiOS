@@ -125,6 +125,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="title" destination="72H-Es-RSH" id="uOh-sY-l6j"/>
+                                    <segue destination="aFh-TY-W5r" kind="show" id="pQY-SS-7f8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -141,6 +142,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9R-WK-7xj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114.40000000000001" y="1449.6251874062971"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="ZjX-pJ-fak">
+            <objects>
+                <viewController id="aFh-TY-W5r" customClass="VideoPlayerViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bS6-Hm-Zvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-4B-bQ4">
+                                <rect key="frame" x="16" y="106" width="343" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="jyM-rH-7TN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e8P-4B-bQ4" firstAttribute="leading" secondItem="dbd-HD-TAN" secondAttribute="leading" constant="16" id="1Xm-MS-QwH"/>
+                            <constraint firstItem="dbd-HD-TAN" firstAttribute="trailing" secondItem="e8P-4B-bQ4" secondAttribute="trailing" constant="16" id="YxB-ri-bgc"/>
+                            <constraint firstItem="dbd-HD-TAN" firstAttribute="bottom" secondItem="e8P-4B-bQ4" secondAttribute="bottom" constant="140" id="iMI-vL-ue8"/>
+                            <constraint firstItem="e8P-4B-bQ4" firstAttribute="top" secondItem="dbd-HD-TAN" secondAttribute="top" constant="42" id="nmg-sW-iId"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dbd-HD-TAN"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="e8P-4B-bQ4" id="ZH5-Z1-eP6"/>
+                        <outlet property="playerHeightConstraint" destination="jyM-rH-7TN" id="ThI-Gy-e9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfh-oa-mg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="2132.3838080959522"/>
         </scene>
         <!--Search-->
         <scene sceneID="gQh-jK-fjT">
