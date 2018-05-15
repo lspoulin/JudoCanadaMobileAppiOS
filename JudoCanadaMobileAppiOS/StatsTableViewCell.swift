@@ -1,16 +1,16 @@
 //
-//  PostTableViewCell.swift
-//  
+//  StatsTableViewCell.swift
+//  JudoCanadaMobileAppiOS
 //
-//  Created by Louis-Simon Poulin on 2018-05-07.
+//  Created by Louis-Simon Poulin on 2018-05-11.
+//  Copyright © 2018 Louis-Simon Poulin. All rights reserved.
 //
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
-    @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelExerpt: UILabel!
-    @IBOutlet weak var imgPost: UIImageView!
+class StatsTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

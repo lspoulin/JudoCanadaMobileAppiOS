@@ -20,11 +20,17 @@
 		4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D720A21D880048FB1F /* usercinqante.png */; };
 		4F3BC5E420A21D890048FB1F /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D820A21D880048FB1F /* favorite.png */; };
 		4F3BC5E520A21D890048FB1F /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5D920A21D890048FB1F /* pref.png */; };
+		4FA21A8C20A9E548007B5C85 /* videojudo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8620A9E545007B5C85 /* videojudo.png */; };
+		4FA21A8D20A9E548007B5C85 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8720A9E546007B5C85 /* calendar.png */; };
+		4FA21A8E20A9E548007B5C85 /* boutique_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8820A9E546007B5C85 /* boutique_icon.png */; };
 		4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */; };
 		4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */; };
 		4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */; };
 		4FB1CB2F20A631E100C4EA75 /* UIView+DMAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2E20A631E100C4EA75 /* UIView+DMAdditions.swift */; };
 		4FB1CB3120A6322B00C4EA75 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB3020A6322B00C4EA75 /* VideoPlayerViewController.swift */; };
+		4FB1CB3320A6667600C4EA75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB3220A6667500C4EA75 /* User.swift */; };
+		4FB1CB3520A666FC00C4EA75 /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB3420A666FC00C4EA75 /* StatsTableViewCell.swift */; };
+		4FB1CB3720A6672A00C4EA75 /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB3620A6672A00C4EA75 /* StatsTableViewController.swift */; };
 		4FB20A4D20A39954004FBB81 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */; };
 		4FB20A5320A39A56004FBB81 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5020A39A55004FBB81 /* video.png */; };
 		4FB20A5420A39A56004FBB81 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB20A5120A39A56004FBB81 /* stats.png */; };
@@ -71,11 +77,17 @@
 		4F3BC5D720A21D880048FB1F /* usercinqante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usercinqante.png; sourceTree = "<group>"; };
 		4F3BC5D820A21D880048FB1F /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		4F3BC5D920A21D890048FB1F /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
+		4FA21A8620A9E545007B5C85 /* videojudo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videojudo.png; sourceTree = "<group>"; };
+		4FA21A8720A9E546007B5C85 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		4FA21A8820A9E546007B5C85 /* boutique_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boutique_icon.png; sourceTree = "<group>"; };
 		4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityItemProvider.swift; sourceTree = "<group>"; };
 		4FB1CB2E20A631E100C4EA75 /* UIView+DMAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DMAdditions.swift"; sourceTree = "<group>"; };
 		4FB1CB3020A6322B00C4EA75 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		4FB1CB3220A6667500C4EA75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4FB1CB3420A666FC00C4EA75 /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		4FB1CB3620A6672A00C4EA75 /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
 		4FB20A4C20A39954004FBB81 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = /Users/lspoulin/dev/JudoCanadaMobileAppiOS/JudoCanadaMobileAppiOS/PostTableViewCell.swift; sourceTree = "<absolute>"; };
 		4FB20A5020A39A55004FBB81 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/video.png; sourceTree = "<group>"; };
 		4FB20A5120A39A56004FBB81 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = ../../../JudoCanadaMobileAppAndroid/app/src/main/res/drawable/stats.png; sourceTree = "<group>"; };
@@ -127,6 +139,8 @@
 		4FB1CB2B20A62EE900C4EA75 /* Stats */ = {
 			isa = PBXGroup;
 			children = (
+				4FB1CB3420A666FC00C4EA75 /* StatsTableViewCell.swift */,
+				4FB1CB3620A6672A00C4EA75 /* StatsTableViewController.swift */,
 			);
 			name = Stats;
 			sourceTree = "<group>";
@@ -200,6 +214,9 @@
 		4FB72C1D20A090EE00AD3FCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4FA21A8820A9E546007B5C85 /* boutique_icon.png */,
+				4FA21A8720A9E546007B5C85 /* calendar.png */,
+				4FA21A8620A9E545007B5C85 /* videojudo.png */,
 				4FB20A5220A39A56004FBB81 /* news.png */,
 				4FB20A5120A39A56004FBB81 /* stats.png */,
 				4FB20A5020A39A55004FBB81 /* video.png */,
@@ -255,6 +272,7 @@
 			children = (
 				4FB20A5620A39AF2004FBB81 /* Video.swift */,
 				4FB72C2020A0B96000AD3FCB /* Post.swift */,
+				4FB1CB3220A6667500C4EA75 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -368,13 +386,16 @@
 				4F3BC5E420A21D890048FB1F /* favorite.png in Resources */,
 				4FB72C1C20A090D800AD3FCB /* logo.png in Resources */,
 				4F3BC5DC20A21D890048FB1F /* preference.png in Resources */,
+				4FA21A8C20A9E548007B5C85 /* videojudo.png in Resources */,
 				4FB72C0620A08A4900AD3FCB /* LaunchScreen.storyboard in Resources */,
+				4FA21A8D20A9E548007B5C85 /* calendar.png in Resources */,
 				4F3BC5DD20A21D890048FB1F /* search.png in Resources */,
 				4F3BC5E320A21D890048FB1F /* usercinqante.png in Resources */,
 				4F3BC5E120A21D890048FB1F /* usercinq.png in Resources */,
 				4F3BC5E520A21D890048FB1F /* pref.png in Resources */,
 				4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */,
 				4FB20A5320A39A56004FBB81 /* video.png in Resources */,
+				4FA21A8E20A9E548007B5C85 /* boutique_icon.png in Resources */,
 				4FB20A5520A39A56004FBB81 /* news.png in Resources */,
 				4F3BC5DB20A21D890048FB1F /* fav.png in Resources */,
 				4F3BC5E220A21D890048FB1F /* srch.png in Resources */,
@@ -440,12 +461,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-JudoCanadaMobileAppiOS/Pods-JudoCanadaMobileAppiOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DailymotionPlayerSDK/DailymotionPlayerSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DailymotionPlayerSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,8 +487,10 @@
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
 				4FB72C2520A0C72A00AD3FCB /* PostTableViewController.swift in Sources */,
 				4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */,
+				4FB1CB3320A6667600C4EA75 /* User.swift in Sources */,
 				4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
+				4FB1CB3720A6672A00C4EA75 /* StatsTableViewController.swift in Sources */,
 				4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
@@ -473,6 +498,7 @@
 				4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */,
 				4FB72C2B20A0EDE200AD3FCB /* ColorTheme.swift in Sources */,
 				4FB1CB3120A6322B00C4EA75 /* VideoPlayerViewController.swift in Sources */,
+				4FB1CB3520A666FC00C4EA75 /* StatsTableViewCell.swift in Sources */,
 				4FB20A5720A39AF2004FBB81 /* Video.swift in Sources */,
 				4FB1CB2F20A631E100C4EA75 /* UIView+DMAdditions.swift in Sources */,
 			);
@@ -639,10 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -659,10 +682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -679,11 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -701,11 +717,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

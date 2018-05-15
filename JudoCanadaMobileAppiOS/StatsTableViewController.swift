@@ -1,41 +1,40 @@
 //
-//  TableViewController.swift
+//  StatsTableViewController.swift
 //  JudoCanadaMobileAppiOS
 //
-//  Created by Louis-Simon Poulin on 2018-05-07.
+//  Created by Louis-Simon Poulin on 2018-05-11.
 //  Copyright © 2018 Louis-Simon Poulin. All rights reserved.
 //
 
 import UIKit
-import Kingfisher
 
-class PostTableViewController: UITableViewController {
-    @IBOutlet weak var progressBar: UIProgressView!
-    var posts = [Post]()
+class StatsTableViewController: UITableViewController {
+
+    var users:[User] = [User]()
     var time:Float = 0.0
     var timer:Timer?
     
+    @IBOutlet weak var progressBar: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getPosts()
+        getUsers()
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.contentMode = .scaleAspectFit
         let image = UIImage(named: "logo.png")
         imageView.image = image
         navigationItem.titleView = imageView
-        
-         // Uncomment the following line to preserve selection between presentations
+        // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func getPosts() {
+    func getUsers() {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.setProgress), userInfo: nil, repeats: true)
         let apiHelper:ApiHelper = ApiHelper()
-        apiHelper.getPosts(completion: display)
+        apiHelper.getUsers(completion: display)
     }
     
     @objc func setProgress() {
@@ -43,54 +42,44 @@ class PostTableViewController: UITableViewController {
         self.progressBar.progress = time.truncatingRemainder(dividingBy: 1.0)
     }
     
-    func display(myPosts:Any?)->(){
-        guard let posts:[Post] = myPosts as? [Post] else{
-            print("No Post array")
+    func display(myList:Any?)->(){
+        self.timer?.invalidate()
+        self.progressBar.isHidden = true
+        guard let usertemp:[User] = myList as? [User] else{
+            print("No Video list")
             return
         }
-        self.posts = posts
+        self.users = usertemp
         self.tableView.reloadData()
         self.timer?.invalidate()
         self.progressBar.isHidden = true
     }
- 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-       
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return posts.count
+        return (users.count)
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
-        let post = cell as! PostTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StatsCell", for: indexPath) as! StatsTableViewCell
+        let user:User = users[indexPath.row]
+        cell.label.text = "\(user.firstname) \(user.name) : \(user.email)"
         
-        let postobj = posts[indexPath.row]
-        post.labelTitle.text = postobj.title
-        post.labelExerpt.text = postobj.excerpt.htmlToString
-    
-        if postobj.imageList.count>0{
-            guard let urlString:String = posts[indexPath.row].imageList[0] else {
-                return cell
-            }
-            let url = URL(string: urlString)
-            // this downloads the image asynchronously if it's not cached yet
-            post.imgPost.kf.setImage(with: url)
-        }
         return cell
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -127,23 +116,14 @@ class PostTableViewController: UITableViewController {
     }
     */
 
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let view:PostViewController = segue.destination as! PostViewController else {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let view:VideoPlayerViewController = segue.destination as! VideoPlayerViewController else {
             return
         }
         if let indexPath = tableView.indexPathForSelectedRow{
             let selectedRow = indexPath.row
-           view.post = posts[selectedRow]
+            view.video = videoList.videos![selectedRow]
         }
-        
-        
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    
+    }*/
 
 }

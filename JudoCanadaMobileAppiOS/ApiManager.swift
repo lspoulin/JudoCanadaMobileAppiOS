@@ -31,7 +31,7 @@ class ApiManager<M:Mappable>{
         return ""
     }
     
-    public func getUserList()->String?{
+    public func getUsers()->String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
             return value+getUserEndPoint;
         }

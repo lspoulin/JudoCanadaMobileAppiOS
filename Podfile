@@ -9,7 +9,7 @@ target 'JudoCanadaMobileAppiOS' do
    pod 'Alamofire', '~> 4.7'
    pod 'ObjectMapper', '~> 3.1'
    pod 'DailymotionPlayerSDK'
-
+   pod 'Kingfisher', '~> 4.0'
   target 'JudoCanadaMobileAppiOSTests' do
     inherit! :search_paths
     # Pods for testing
