@@ -31,7 +31,7 @@ class ApiManager<M:Mappable>{
         return ""
     }
     
-    public func getUserList()->String?{
+    public func getUsers()->String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
             return value+getUserEndPoint;
         }
@@ -43,6 +43,7 @@ class ApiManager<M:Mappable>{
         Alamofire.request(getURL).responseJSON { response in
             if response.error != nil{
                 print("\(String(describing: response.error))")
+                completion(AnyClass.self)
                 return
             }
             if response.result.isSuccess {
@@ -70,6 +71,7 @@ class ApiManager<M:Mappable>{
         Alamofire.request(getURL).responseJSON { response in
             if response.error != nil{
                 print("\(String(describing: response.error))")
+                completion(AnyClass.self)
                 return
             }
             if response.result.isSuccess {

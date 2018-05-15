@@ -9,10 +9,12 @@
 import Foundation
 import ObjectMapper
 
+
 struct Video:Mappable{
     var id:String?
     var title:String?
-    
+
+    init(){}
     init?(map: Map) {
         id <- map["id"]
         title    <- map["title"]

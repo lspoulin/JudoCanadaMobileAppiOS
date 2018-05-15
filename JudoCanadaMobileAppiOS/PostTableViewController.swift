@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PostTableViewController: UITableViewController {
     @IBOutlet weak var progressBar: UIProgressView!
@@ -17,6 +18,13 @@ class PostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getPosts()
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "logo.png")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        
          // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -68,9 +76,18 @@ class PostTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
         let post = cell as! PostTableViewCell
         
-        post.labelTitle.text = posts[indexPath.row].title
-        post.labelExerpt.text = posts[indexPath.row].excerpt.htmlToString
+        let postobj = posts[indexPath.row]
+        post.labelTitle.text = postobj.title
+        post.labelExerpt.text = postobj.excerpt.htmlToString
     
+        if postobj.imageList.count>0{
+            guard let urlString:String = posts[indexPath.row].imageList[0] else {
+                return cell
+            }
+            let url = URL(string: urlString)
+            // this downloads the image asynchronously if it's not cached yet
+            post.imgPost.kf.setImage(with: url)
+        }
         return cell
     }
     

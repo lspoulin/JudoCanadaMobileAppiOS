@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE6523A230AB1D64D8F541DA7DD17624"
+               BlueprintIdentifier = "0877A7E227C6B178F75C03D3A1ED5708"
                BuildableName = "Pods_JudoCanadaMobileAppiOS.framework"
                BlueprintName = "Pods-JudoCanadaMobileAppiOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE6523A230AB1D64D8F541DA7DD17624"
+            BlueprintIdentifier = "0877A7E227C6B178F75C03D3A1ED5708"
             BuildableName = "Pods_JudoCanadaMobileAppiOS.framework"
             BlueprintName = "Pods-JudoCanadaMobileAppiOS"
             ReferencedContainer = "container:Pods.xcodeproj">
