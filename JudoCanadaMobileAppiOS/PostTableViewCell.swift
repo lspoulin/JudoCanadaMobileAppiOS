@@ -11,6 +11,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelExerpt: UILabel!
     @IBOutlet weak var imgPost: UIImageView!
+    @IBOutlet weak var imgWidth: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

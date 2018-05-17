@@ -13,6 +13,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var textContent: UITextView!
     @IBOutlet weak var imgPost: UIImageView!
+    @IBOutlet weak var imgHeight: NSLayoutConstraint!
     
     var post:Post?
     
@@ -35,12 +36,18 @@ class PostViewController: UIViewController {
         labelTitle.text = mypost.title        
         textContent.text = mypost.content.htmlToString
         
-        guard let urlstring:String = mypost.imageList[0] else{
+        if mypost.imageList.count == 0 {
+            self.imgHeight.constant = 0
+            self.imgPost.isHidden = true
+            self.imgPost.layoutIfNeeded()
             return
+        }else{
+            let urlstring:String = mypost.imageList[0]
+            let url = URL(string: urlstring)
+            // this downloads the image asynchronously if it's not cached yet
+            imgPost.kf.setImage(with: url)
         }
-        let url = URL(string: urlstring)
-        // this downloads the image asynchronously if it's not cached yet
-        imgPost.kf.setImage(with: url)
+       
         
     }
 }

@@ -14,6 +14,7 @@ import ObjectMapper
 let getPostEndpoint = "posts"
 let getVideoEndPoint = "user/JudoCanada/videos"
 let getUserEndPoint = "users/"
+let getThumbnailEndPoint = "thumbnail/video/"
 
 class ApiManager<M:Mappable>{
     
@@ -34,6 +35,13 @@ class ApiManager<M:Mappable>{
     public func getUsers()->String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
             return value+getUserEndPoint;
+        }
+        return ""
+    }
+    
+    public static func getThumbnailURL(id:String)->String?{
+        if let value = ProcessInfo.processInfo.environment["THUMBNAIL_BASE_URL"] {
+            return value+getThumbnailEndPoint+id;
         }
         return ""
     }

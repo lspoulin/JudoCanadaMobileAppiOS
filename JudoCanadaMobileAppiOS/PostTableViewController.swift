@@ -73,22 +73,33 @@ class PostTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
-        let post = cell as! PostTableViewCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier")
+        cell?.imageView?.kf.cancelDownloadTask()
+        
+        let cells = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
+        let post = cells as! PostTableViewCell
+        
         
         let postobj = posts[indexPath.row]
         post.labelTitle.text = postobj.title
         post.labelExerpt.text = postobj.excerpt.htmlToString
     
-        if postobj.imageList.count>0{
-            guard let urlString:String = posts[indexPath.row].imageList[0] else {
-                return cell
-            }
-            let url = URL(string: urlString)
+        if postobj.imageList.count != 0{
+        let urlString:String = postobj.imageList[0]
+        let url = URL(string: urlString)
             // this downloads the image asynchronously if it's not cached yet
             post.imgPost.kf.setImage(with: url)
+            
+            //post.labelTitle.constraints.append(<#T##newElement: NSLayoutConstraint##NSLayoutConstraint#>)
         }
-        return cell
+        else{
+            post.imgWidth.constant = 0
+            post.imgPost.isHidden = true
+            post.layoutIfNeeded()
+        }
+    
+        return cells
     }
     
 

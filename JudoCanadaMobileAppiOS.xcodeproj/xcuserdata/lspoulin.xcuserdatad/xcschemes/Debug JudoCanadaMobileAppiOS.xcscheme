@@ -78,6 +78,11 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+            key = "THUMBNAIL_BASE_URL"
+            value = "https://www.dailymotion.com/"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "USER_BASE_URL"
             value = "http://Louis-Simons-MacBook-Pro.local:8888/JudoCanada/PHP/api.php/"
             isEnabled = "YES">

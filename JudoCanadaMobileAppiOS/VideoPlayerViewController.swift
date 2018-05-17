@@ -83,6 +83,15 @@ class VideoPlayerViewController: UIViewController {
         updatePlayer(height: size.height)
     }
     
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if parent == nil {
+            // The view is being removed from the stack, so call your function here
+            playerViewController.pause()
+        }
+    }
+    
 }
 
 extension VideoPlayerViewController: DMPlayerViewControllerDelegate {

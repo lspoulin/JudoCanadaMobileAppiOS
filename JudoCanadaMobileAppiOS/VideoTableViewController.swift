@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class VideoTableViewController: UITableViewController {
     var videoList:VideoList = VideoList()
@@ -73,8 +74,14 @@ class VideoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoListCell", for: indexPath) as! VideoTableViewCell
 
-        cell.title.text = videoList.videos![indexPath.row].title
+        let index = indexPath.row
+        let video = videoList.videos![index]
+        cell.title.text = videoList.videos![index].title
 
+        let urlString = ApiManager<VideoList>.getThumbnailURL(id: video.id!)
+        let url = URL(string: urlString!)
+        // this downloads the image asynchronously if it's not cached yet
+        cell.thumbnail.kf.setImage(with: url)
         return cell
     }
     
