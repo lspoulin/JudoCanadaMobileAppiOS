@@ -23,6 +23,7 @@
 		4FA21A8C20A9E548007B5C85 /* videojudo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8620A9E545007B5C85 /* videojudo.png */; };
 		4FA21A8D20A9E548007B5C85 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8720A9E546007B5C85 /* calendar.png */; };
 		4FA21A8E20A9E548007B5C85 /* boutique_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8820A9E546007B5C85 /* boutique_icon.png */; };
+		4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */; };
 		4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */; };
 		4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */; };
 		4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */; };
@@ -80,6 +81,7 @@
 		4FA21A8620A9E545007B5C85 /* videojudo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videojudo.png; sourceTree = "<group>"; };
 		4FA21A8720A9E546007B5C85 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		4FA21A8820A9E546007B5C85 /* boutique_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boutique_icon.png; sourceTree = "<group>"; };
+		4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupVC.swift; sourceTree = "<group>"; };
 		4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityItemProvider.swift; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA21A9220B46045007B5C85 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
 		4FB1CB2B20A62EE900C4EA75 /* Stats */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +259,7 @@
 		4FB72C3020A0F41F00AD3FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FA21A9220B46045007B5C85 /* Registration */,
 				4FB1CB2B20A62EE900C4EA75 /* Stats */,
 				4FB20A5920A39B8E004FBB81 /* Video */,
 				4FB20A5820A39B77004FBB81 /* Post */,
@@ -489,6 +500,7 @@
 				4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */,
 				4FB1CB3320A6667600C4EA75 /* User.swift in Sources */,
 				4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */,
+				4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
 				4FB1CB3720A6672A00C4EA75 /* StatsTableViewController.swift in Sources */,
 				4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */,
@@ -665,7 +677,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -682,7 +697,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -699,7 +717,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -717,7 +739,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V2CQ8ZSEH;
 				INFOPLIST_FILE = JudoCanadaMobileAppiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.judocanada.JudoCanadaMobileAppiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
