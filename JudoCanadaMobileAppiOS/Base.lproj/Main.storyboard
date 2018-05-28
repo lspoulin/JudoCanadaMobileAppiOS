@@ -81,7 +81,13 @@
                             <outlet property="delegate" destination="PoG-1M-dSr" id="h5A-Xh-4cb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="News Feed" id="I70-Sl-7T9"/>
+                    <navigationItem key="navigationItem" title="News Feed" id="I70-Sl-7T9">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Zch-oe-UYv">
+                            <connections>
+                                <action selector="logout:" destination="PoG-1M-dSr" id="ejs-Eb-N5j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="progressBar" destination="oIp-0c-wsF" id="uaC-du-6TV"/>
                     </connections>
@@ -165,14 +171,14 @@
         <scene sceneID="ZjX-pJ-fak">
             <objects>
                 <viewController id="aFh-TY-W5r" customClass="VideoPlayerViewController" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="bS6-Hm-Zvc">
+                    <view key="view" contentMode="scaleToFill" id="bS6-Hm-Zvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-mZ-wPb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-mZ-wPb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                             </progressView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-4B-bQ4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-4B-bQ4">
                                 <rect key="frame" x="0.0" y="65" width="375" height="209"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -433,14 +439,14 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="KTF-vO-Kis" kind="relationship" relationship="rootViewController" id="Qo9-3X-tqv"/>
+                        <segue destination="TrA-jc-C1E" kind="relationship" relationship="rootViewController" id="UfD-xh-hN6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVz-Jg-ixt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-998" y="-240"/>
         </scene>
-        <!--Sign in-->
+        <!--Login-->
         <scene sceneID="cjT-mp-6Mc">
             <objects>
                 <viewController id="KTF-vO-Kis" customClass="LoginSignupVC" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -478,13 +484,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-UX-J5W">
-                                <rect key="frame" x="161.5" y="455" width="52" height="30"/>
-                                <state key="normal" title="Sign up"/>
-                                <connections>
-                                    <segue destination="TrA-jc-C1E" kind="show" id="mPJ-1X-5DC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD8-8d-SOL">
                                 <rect key="frame" x="168" y="376" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
@@ -495,23 +494,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BFf-UX-J5W" firstAttribute="top" secondItem="aD8-8d-SOL" secondAttribute="bottom" constant="49" id="8Gl-8G-Pki"/>
                             <constraint firstItem="ALB-nr-tmN" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="ARd-bp-eFf"/>
                             <constraint firstItem="iZm-bt-fty" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="DWa-Zm-ZvF"/>
                             <constraint firstItem="aD8-8d-SOL" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="Ezd-mq-gVL"/>
                             <constraint firstItem="pyj-Jp-4Ps" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="Fz0-Zk-sjR"/>
-                            <constraint firstItem="WI1-cE-W7z" firstAttribute="bottom" secondItem="BFf-UX-J5W" secondAttribute="bottom" constant="182" id="GNE-ul-afF"/>
                             <constraint firstItem="ALB-nr-tmN" firstAttribute="top" secondItem="WI1-cE-W7z" secondAttribute="top" constant="146" id="Ipt-qr-khT"/>
                             <constraint firstItem="1IH-Qs-GYo" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="SmG-7o-Fcp"/>
                             <constraint firstItem="pyj-Jp-4Ps" firstAttribute="top" secondItem="ALB-nr-tmN" secondAttribute="bottom" constant="8" id="V62-B6-9Fg"/>
                             <constraint firstItem="aD8-8d-SOL" firstAttribute="top" secondItem="iZm-bt-fty" secondAttribute="bottom" constant="27" id="eZf-X9-Sbq"/>
                             <constraint firstItem="iZm-bt-fty" firstAttribute="top" secondItem="1IH-Qs-GYo" secondAttribute="bottom" constant="8" id="iAt-pa-vC5"/>
-                            <constraint firstItem="BFf-UX-J5W" firstAttribute="centerX" secondItem="NWD-hc-c3R" secondAttribute="centerX" id="wyF-Uz-0vR"/>
                             <constraint firstItem="1IH-Qs-GYo" firstAttribute="top" secondItem="pyj-Jp-4Ps" secondAttribute="bottom" constant="21" id="xs1-r9-vPe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WI1-cE-W7z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign in" id="cvt-JN-s3P"/>
+                    <navigationItem key="navigationItem" title="Login" id="cvt-JN-s3P"/>
                     <connections>
                         <outlet property="email" destination="pyj-Jp-4Ps" id="Ql8-Aa-BiN"/>
                         <outlet property="password" destination="iZm-bt-fty" id="z4X-8q-z8H"/>
@@ -519,12 +515,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOx-mc-Nii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194.40000000000001" y="-235.23238380809596"/>
+            <point key="canvasLocation" x="470" y="-224"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign up-->
         <scene sceneID="WBg-cT-cwJ">
             <objects>
-                <viewController id="TrA-jc-C1E" sceneMemberID="viewController">
+                <viewController id="TrA-jc-C1E" customClass="SignUpVC" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4tj-LI-d1L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,7 +532,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gtk-zJ-hFD">
-                                <rect key="frame" x="175" y="135" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="135" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="efl-OY-XVM"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -548,7 +547,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-7A-tK9">
-                                <rect key="frame" x="175" y="202" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="202" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -560,7 +559,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh2-3R-NNE">
-                                <rect key="frame" x="175" y="269" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="269" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -572,7 +571,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ZX-XS-X5Q">
-                                <rect key="frame" x="175" y="460" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="460" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -584,7 +583,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DrO-Wj-Gx2">
-                                <rect key="frame" x="175" y="527" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="527" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -596,7 +595,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0me-q3-tWp">
-                                <rect key="frame" x="175" y="336" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="336" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -608,51 +607,86 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsq-Sv-Q0k">
-                                <rect key="frame" x="175" y="393" width="25" height="30"/>
+                                <rect key="frame" x="112.5" y="393" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffw-FP-Nsp">
+                                <rect key="frame" x="161" y="565" width="52" height="30"/>
+                                <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signup:" destination="TrA-jc-C1E" eventType="touchUpInside" id="QYE-Wp-6lE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akS-Tu-Mlk">
+                                <rect key="frame" x="168" y="603" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="KTF-vO-Kis" eventType="touchUpInside" id="xdj-bQ-ULl"/>
+                                    <segue destination="KTF-vO-Kis" kind="show" id="V61-4g-c2a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="top" secondItem="k1d-Sg-H3V" secondAttribute="bottom" constant="8" id="15z-3x-00p"/>
-                            <constraint firstItem="Sh2-3R-NNE" firstAttribute="top" secondItem="jPj-5p-Oin" secondAttribute="bottom" constant="8" id="1uk-rx-Z4x"/>
-                            <constraint firstItem="pjd-Kc-ke3" firstAttribute="top" secondItem="4ZX-XS-X5Q" secondAttribute="bottom" constant="8" id="2lo-J0-jIp"/>
-                            <constraint firstItem="Spy-Ks-l29" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="31J-39-BFg"/>
-                            <constraint firstItem="yeh-Ic-eLP" firstAttribute="top" secondItem="bSx-bZ-7dd" secondAttribute="top" constant="42" id="5U7-ei-fdm"/>
-                            <constraint firstItem="4ZX-XS-X5Q" firstAttribute="top" secondItem="FEK-pG-fYC" secondAttribute="bottom" constant="8" id="6zQ-Tm-Ahk"/>
-                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="top" secondItem="0me-q3-tWp" secondAttribute="bottom" constant="27" id="7R2-Se-z9d"/>
-                            <constraint firstItem="Gtk-zJ-hFD" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="BUT-ma-lUg"/>
-                            <constraint firstItem="FEK-pG-fYC" firstAttribute="top" secondItem="gsq-Sv-Q0k" secondAttribute="bottom" constant="8" id="Bgx-mD-4qW"/>
-                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="C1P-tX-Aea"/>
-                            <constraint firstItem="FEK-pG-fYC" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="GJm-10-yAL"/>
-                            <constraint firstItem="jPj-5p-Oin" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="Gyn-um-0ue"/>
-                            <constraint firstItem="jPj-5p-Oin" firstAttribute="top" secondItem="hAn-7A-tK9" secondAttribute="bottom" constant="8" id="KJW-Fv-TsF"/>
-                            <constraint firstItem="k1d-Sg-H3V" firstAttribute="top" secondItem="G50-kC-V9b" secondAttribute="bottom" constant="36" id="RKj-IT-609"/>
-                            <constraint firstItem="Sh2-3R-NNE" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="URO-A4-TDT"/>
-                            <constraint firstItem="Gtk-zJ-hFD" firstAttribute="top" secondItem="yeh-Ic-eLP" secondAttribute="bottom" constant="8" id="Ux7-6a-PV0"/>
-                            <constraint firstItem="G50-kC-V9b" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="ff6-wc-gnC"/>
-                            <constraint firstItem="bSx-bZ-7dd" firstAttribute="bottom" secondItem="DrO-Wj-Gx2" secondAttribute="bottom" constant="110" id="iwf-mW-zcZ"/>
-                            <constraint firstItem="4ZX-XS-X5Q" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="kNG-MN-IRm"/>
-                            <constraint firstItem="0me-q3-tWp" firstAttribute="top" secondItem="G50-kC-V9b" secondAttribute="bottom" constant="8" id="l4V-Ea-uDn"/>
-                            <constraint firstItem="hAn-7A-tK9" firstAttribute="top" secondItem="Spy-Ks-l29" secondAttribute="bottom" constant="8" id="lyp-UO-Rb6"/>
-                            <constraint firstItem="G50-kC-V9b" firstAttribute="top" secondItem="Sh2-3R-NNE" secondAttribute="bottom" constant="8" id="mE0-18-ECw"/>
-                            <constraint firstItem="0me-q3-tWp" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="mgM-5d-bCO"/>
-                            <constraint firstItem="pjd-Kc-ke3" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="n89-ia-nyx"/>
-                            <constraint firstItem="Spy-Ks-l29" firstAttribute="top" secondItem="Gtk-zJ-hFD" secondAttribute="bottom" constant="8" id="nJs-LV-sDM"/>
-                            <constraint firstItem="hAn-7A-tK9" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="pDe-l8-pR3"/>
-                            <constraint firstItem="yeh-Ic-eLP" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="pmE-pZ-MKz"/>
-                            <constraint firstItem="k1d-Sg-H3V" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="uYR-Jf-ATL"/>
-                            <constraint firstItem="DrO-Wj-Gx2" firstAttribute="top" secondItem="pjd-Kc-ke3" secondAttribute="bottom" constant="8" id="v9f-sC-kEg"/>
-                            <constraint firstItem="DrO-Wj-Gx2" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="vRm-hg-c7h"/>
+                            <constraint firstItem="Ffw-FP-Nsp" firstAttribute="top" secondItem="DrO-Wj-Gx2" secondAttribute="bottom" constant="8" id="2T7-YD-Soc"/>
+                            <constraint firstItem="0me-q3-tWp" firstAttribute="top" secondItem="G50-kC-V9b" secondAttribute="bottom" constant="8" id="7ud-5A-S4z"/>
+                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="top" secondItem="k1d-Sg-H3V" secondAttribute="bottom" constant="8" id="9KD-FT-hNV"/>
+                            <constraint firstItem="Ffw-FP-Nsp" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="ACJ-bd-4v3"/>
+                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="top" secondItem="0me-q3-tWp" secondAttribute="bottom" constant="27" id="AUb-jZ-psq"/>
+                            <constraint firstItem="Sh2-3R-NNE" firstAttribute="top" secondItem="jPj-5p-Oin" secondAttribute="bottom" constant="8" id="AXW-Z0-iYO"/>
+                            <constraint firstItem="hAn-7A-tK9" firstAttribute="top" secondItem="Spy-Ks-l29" secondAttribute="bottom" constant="8" id="Chi-uh-7m8"/>
+                            <constraint firstItem="akS-Tu-Mlk" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="Izk-dN-2CN"/>
+                            <constraint firstItem="DrO-Wj-Gx2" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="JYF-ZL-PSV"/>
+                            <constraint firstItem="Sh2-3R-NNE" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="JhO-JU-IRb"/>
+                            <constraint firstItem="G50-kC-V9b" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="KH5-eo-26A"/>
+                            <constraint firstItem="jPj-5p-Oin" firstAttribute="top" secondItem="hAn-7A-tK9" secondAttribute="bottom" constant="8" id="NLN-km-PL6"/>
+                            <constraint firstItem="pjd-Kc-ke3" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="OG1-YT-Kfj"/>
+                            <constraint firstItem="akS-Tu-Mlk" firstAttribute="top" secondItem="Ffw-FP-Nsp" secondAttribute="bottom" constant="8" id="Po7-8S-My9"/>
+                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="QL0-fz-beD"/>
+                            <constraint firstItem="pjd-Kc-ke3" firstAttribute="top" secondItem="4ZX-XS-X5Q" secondAttribute="bottom" constant="8" id="R60-vq-Fi0"/>
+                            <constraint firstItem="Spy-Ks-l29" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="RLb-ph-Ckl"/>
+                            <constraint firstItem="DrO-Wj-Gx2" firstAttribute="top" secondItem="pjd-Kc-ke3" secondAttribute="bottom" constant="8" id="RW3-NC-O7V"/>
+                            <constraint firstItem="yeh-Ic-eLP" firstAttribute="top" secondItem="bSx-bZ-7dd" secondAttribute="top" constant="42" id="Skx-14-ZOz"/>
+                            <constraint firstItem="FEK-pG-fYC" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="TMK-xa-oK2"/>
+                            <constraint firstItem="Spy-Ks-l29" firstAttribute="top" secondItem="Gtk-zJ-hFD" secondAttribute="bottom" constant="8" id="TNn-pO-UL7"/>
+                            <constraint firstItem="jPj-5p-Oin" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="UCE-Yh-j0Z"/>
+                            <constraint firstItem="4ZX-XS-X5Q" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="bO1-l4-WsE"/>
+                            <constraint firstItem="G50-kC-V9b" firstAttribute="top" secondItem="Sh2-3R-NNE" secondAttribute="bottom" constant="8" id="fIy-Ib-X8t"/>
+                            <constraint firstItem="0me-q3-tWp" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="fub-al-WRL"/>
+                            <constraint firstItem="yeh-Ic-eLP" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="hC2-DU-IkU"/>
+                            <constraint firstItem="gsq-Sv-Q0k" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="hNe-ue-emU"/>
+                            <constraint firstItem="DrO-Wj-Gx2" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="ijk-8Y-Zdz"/>
+                            <constraint firstItem="bSx-bZ-7dd" firstAttribute="bottom" secondItem="akS-Tu-Mlk" secondAttribute="bottom" constant="34" id="lmg-ny-xu3"/>
+                            <constraint firstItem="0me-q3-tWp" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="o5B-XC-7f0"/>
+                            <constraint firstItem="Gtk-zJ-hFD" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="o95-hG-f5M"/>
+                            <constraint firstItem="Gtk-zJ-hFD" firstAttribute="top" secondItem="yeh-Ic-eLP" secondAttribute="bottom" constant="8" id="qxG-XA-nKP"/>
+                            <constraint firstItem="k1d-Sg-H3V" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="rkp-nr-tRA"/>
+                            <constraint firstItem="FEK-pG-fYC" firstAttribute="top" secondItem="gsq-Sv-Q0k" secondAttribute="bottom" constant="8" id="tyB-LB-92a"/>
+                            <constraint firstItem="hAn-7A-tK9" firstAttribute="centerX" secondItem="4tj-LI-d1L" secondAttribute="centerX" id="vUr-6h-pQf"/>
+                            <constraint firstItem="k1d-Sg-H3V" firstAttribute="top" secondItem="G50-kC-V9b" secondAttribute="bottom" constant="36" id="xXw-MP-iDY"/>
+                            <constraint firstItem="4ZX-XS-X5Q" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="yGk-Qv-gJI"/>
+                            <constraint firstItem="Sh2-3R-NNE" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="yNm-9i-aJf"/>
+                            <constraint firstItem="4ZX-XS-X5Q" firstAttribute="top" secondItem="FEK-pG-fYC" secondAttribute="bottom" constant="8" id="yw2-Jn-VnT"/>
+                            <constraint firstItem="hAn-7A-tK9" firstAttribute="width" secondItem="Gtk-zJ-hFD" secondAttribute="width" id="zn2-LB-DwT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bSx-bZ-7dd"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign up" id="Rqx-gg-Wck"/>
+                    <connections>
+                        <outlet property="DateofBirth" destination="DrO-Wj-Gx2" id="CKU-Gn-87T"/>
+                        <outlet property="JudoCanadaId" destination="4ZX-XS-X5Q" id="NUR-5C-sGE"/>
+                        <outlet property="confirm" destination="gsq-Sv-Q0k" id="evY-XS-d3y"/>
+                        <outlet property="email" destination="Sh2-3R-NNE" id="yam-Bc-X2r"/>
+                        <outlet property="firstname" destination="hAn-7A-tK9" id="cy3-TT-h0V"/>
+                        <outlet property="name" destination="Gtk-zJ-hFD" id="DCN-Bm-Iy6"/>
+                        <outlet property="password" destination="0me-q3-tWp" id="6J3-Jm-Bzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3H-t2-nmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="-235"/>
+            <point key="canvasLocation" x="-268" y="-224"/>
         </scene>
         <!--Judo Canada-->
         <scene sceneID="nWP-Yw-YM0">

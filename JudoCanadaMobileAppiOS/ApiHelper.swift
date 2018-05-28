@@ -35,4 +35,9 @@ class ApiHelper{
         guard let api:ApiManager<User> = apiManagerUser else  {return}
         api.getMappableArray(getURL: (api.getUsers())!, completion:completion )
     }
+    
+    public func createUser(completion: @escaping ( _ mappable:Any) -> ()){
+        guard let api:ApiManager<User> = apiManagerUser else  {return}
+        api.postMappable(postURL: api.getUsers()!, parameters: ["":"" as AnyObject], completion: completion)
+    }
 }

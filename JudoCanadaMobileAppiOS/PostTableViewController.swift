@@ -101,6 +101,19 @@ class PostTableViewController: UITableViewController {
     
         return cells
     }
+    @IBAction func logout(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+        UserDefaults.standard.removeObject(forKey: "UserName")
+        appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginSignupVC")
+        
+        appDelegate.window?.rootViewController = initialViewController
+        appDelegate.window?.makeKeyAndVisible()
+    }
     
 
     /*

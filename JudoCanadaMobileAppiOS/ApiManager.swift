@@ -38,6 +38,12 @@ class ApiManager<M:Mappable>{
         }
         return ""
     }
+    public func postUser()->String?{
+        if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
+            return value+getUserEndPoint;
+        }
+        return ""
+    }
     
     public static func getThumbnailURL(id:String)->String?{
         if let value = ProcessInfo.processInfo.environment["THUMBNAIL_BASE_URL"] {
@@ -102,5 +108,11 @@ class ApiManager<M:Mappable>{
         }
        
     }
+   public func postMappable(postURL:String, parameters: [String: AnyObject], completion: @escaping ( _ mappable:Any) -> ()){
+        Alamofire.request(postURL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
+        }
 
 }

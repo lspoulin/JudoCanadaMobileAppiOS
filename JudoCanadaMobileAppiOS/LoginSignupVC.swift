@@ -25,7 +25,7 @@ class LoginSignupVC: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         if email == "lspoulin@gmail.com" && password == "allo"{
-            //UserDefaults.standard.set("lspoulin@gmail.com", forKey: "UserName")
+            UserDefaults.standard.set(email, forKey: "UserName")
             appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

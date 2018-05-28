@@ -24,6 +24,7 @@
 		4FA21A8D20A9E548007B5C85 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8720A9E546007B5C85 /* calendar.png */; };
 		4FA21A8E20A9E548007B5C85 /* boutique_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA21A8820A9E546007B5C85 /* boutique_icon.png */; };
 		4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */; };
+		4FB0A2FC20BC331800148CDD /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0A2FB20BC331800148CDD /* SignUpVC.swift */; };
 		4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */; };
 		4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */; };
 		4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */; };
@@ -82,6 +83,7 @@
 		4FA21A8720A9E546007B5C85 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		4FA21A8820A9E546007B5C85 /* boutique_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boutique_icon.png; sourceTree = "<group>"; };
 		4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupVC.swift; sourceTree = "<group>"; };
+		4FB0A2FB20BC331800148CDD /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4FB1CB2520A626D300C4EA75 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		4FB1CB2720A6271A00C4EA75 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4FB1CB2C20A6319D00C4EA75 /* ShareActivityItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityItemProvider.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4FA21A9320B46070007B5C85 /* LoginSignupVC.swift */,
+				4FB0A2FB20BC331800148CDD /* SignUpVC.swift */,
 			);
 			name = Registration;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */,
 				4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
+				4FB0A2FC20BC331800148CDD /* SignUpVC.swift in Sources */,
 				4FB1CB3720A6672A00C4EA75 /* StatsTableViewController.swift in Sources */,
 				4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
