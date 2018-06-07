@@ -1,23 +1,27 @@
 //
-//  TableViewController.swift
+//  CalendarTableVC.swift
 //  JudoCanadaMobileAppiOS
 //
-//  Created by Louis-Simon Poulin on 2018-05-07.
+//  Created by Louis-Simon Poulin on 2018-06-06.
 //  Copyright © 2018 Louis-Simon Poulin. All rights reserved.
 //
 
 import UIKit
-import Kingfisher
 
-class PostTableViewController: UITableViewController {
+class CalendarTableVC: UITableViewController {
+
     @IBOutlet weak var progressBar: UIProgressView!
-    var posts = [Post]()
+    
+    @IBOutlet weak var datePicker: MonthYearPickerView!
+    var events = [Event]()
+    var diplayEvent = [Event]()
     var time:Float = 0.0
     var timer:Timer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        getPosts()
+
+        getEventList()
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.contentMode = .scaleAspectFit
@@ -25,17 +29,45 @@ class PostTableViewController: UITableViewController {
         imageView.image = image
         navigationItem.titleView = imageView
         
-         // Uncomment the following line to preserve selection between presentations
+        let expiryDatePicker = datePicker as MonthYearPickerView
+        expiryDatePicker.onDateSelected = onDateSelected
+        
+        // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func getPosts() {
+    func onDateSelected(month:Int, year:Int){
+        diplayEvent = getEvents(month, year)
+        self.tableView.reloadData()
+    }
+    
+    func getEvents(_ month:Int, _ year:Int) ->[Event]{
+        var displayEvent = [Event]()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        let startDate = formatter.date(from: "\(year)/\(month>=10 ? "" : "0")\(month)/01")
+        let endDate = Calendar.current.date(byAdding: .month, value: 1, to: startDate!)
+        
+        for event in events{
+            if (event.dateStart?.compare(startDate!)==ComparisonResult.orderedDescending && event.dateStart?.compare(endDate!)==ComparisonResult.orderedAscending){
+                displayEvent.append(event)
+            }
+        }
+        
+        //sort events here
+        displayEvent = displayEvent.sorted(by:{
+            $0.dateStart?.compare($1.dateStart!)==ComparisonResult.orderedAscending
+        })
+        return displayEvent
+    }
+    
+    func getEventList() {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.setProgress), userInfo: nil, repeats: true)
         let apiHelper:ApiHelper = ApiHelper()
-        apiHelper.getPosts(completion: display)
+        apiHelper.getEvents(completion: display)
     }
     
     @objc func setProgress() {
@@ -43,17 +75,18 @@ class PostTableViewController: UITableViewController {
         self.progressBar.progress = time.truncatingRemainder(dividingBy: 1.0)
     }
     
-    func display(myPosts:Any?)->(){
-        guard let posts:[Post] = myPosts as? [Post] else{
-            print("No Post array")
+    func display(myList:Any?)->(){
+        guard let events:[Event] = myList as? [Event] else{
+            print("No Event array")
             return
         }
-        self.posts = posts
-        self.tableView.reloadData()
+        self.events = events
+        onDateSelected(month: Date().getMonthNumber(), year: Date().getYearNumber())
         self.timer?.invalidate()
         self.progressBar.isHidden = true
     }
- 
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,61 +95,34 @@ class PostTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-       
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return posts.count
+        return diplayEvent.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:CalendarTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventIdentifier", for: indexPath) as! CalendarTableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier")
-        cell?.imageView?.kf.cancelDownloadTask()
+        cell.title.text = diplayEvent[indexPath.row].summary
         
-        let cells = tableView.dequeueReusableCell(withIdentifier: "PostIndentifier", for: indexPath)
-        let post = cells as! PostTableViewCell
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd MMMM"
         
-        
-        let postobj = posts[indexPath.row]
-        post.labelTitle.text = postobj.title
-        post.labelExerpt.text = postobj.excerpt.htmlToString
-    
-        if postobj.imageList.count != 0{
-        let urlString:String = postobj.imageList[0]
-        let url = URL(string: urlString)
-            // this downloads the image asynchronously if it's not cached yet
-            post.imgPost.kf.setImage(with: url)
-            
-            //post.labelTitle.constraints.append(<#T##newElement: NSLayoutConstraint##NSLayoutConstraint#>)
-        }
-        else{
-            post.imgWidth.constant = 0
-            post.imgPost.isHidden = true
-            post.layoutIfNeeded()
-        }
-    
-        return cells
-    }
-    @IBAction func logout(_ sender: Any) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-        UserDefaults.standard.removeObject(forKey: "UserName")
-        appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginSignupVC")
-        
-        appDelegate.window?.rootViewController = initialViewController
-        appDelegate.window?.makeKeyAndVisible()
-    }
-    
+        cell.date.text = dateFormatterPrint.string(from: diplayEvent[indexPath.row].dateStart!) + " - " + dateFormatterPrint.string(from: diplayEvent[indexPath.row].dateEnd!)
     
 
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let url = diplayEvent[indexPath.row].url
+        UIApplication.shared.openURL(NSURL(string: url!)! as URL)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -152,23 +158,34 @@ class PostTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let view:PostViewController = segue.destination as! PostViewController else {
-            return
-        }
-        if let indexPath = tableView.indexPathForSelectedRow{
-            let selectedRow = indexPath.row
-           view.post = posts[selectedRow]
-        }
-        
-        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    */
+    
     
 
+}
+extension Date {
+    
+    func getMonthNumber() -> Int {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM"
+        let strMonth = dateFormatter.string(from: self)
+        return Int(strMonth)!
+    }
+    
+    func getYearNumber() -> Int {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        let strYear = dateFormatter.string(from: self)
+        return Int(strYear)!
+    }
+    
+    
 }

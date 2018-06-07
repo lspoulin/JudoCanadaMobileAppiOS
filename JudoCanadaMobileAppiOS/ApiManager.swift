@@ -15,39 +15,49 @@ let getPostEndpoint = "posts"
 let getVideoEndPoint = "user/JudoCanada/videos"
 let getUserEndPoint = "users/"
 let getThumbnailEndPoint = "thumbnail/video/"
+let getEventEndPoint = "events/"
 
 class ApiManager<M:Mappable>{
     
     public func geAllPostsURL() -> String?{
         if let value = ProcessInfo.processInfo.environment["BASE_URL"] {
-            return value+getPostEndpoint;
+            return value+getPostEndpoint
         }
         return ""
     }
     
     public func getVideoList() -> String?{
         if let value = ProcessInfo.processInfo.environment["VIDEO_BASE_URL"] {
-            return value+getVideoEndPoint;
+            return value+getVideoEndPoint
+        }
+        return ""
+    }
+    
+    public func getEvents() -> String?{
+        if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
+            let test = value+getEventEndPoint
+            return test
         }
         return ""
     }
     
     public func getUsers()->String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
-            return value+getUserEndPoint;
+            return value+getUserEndPoint
         }
         return ""
     }
+    
     public func postUser()->String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
-            return value+getUserEndPoint;
+            return value+getUserEndPoint
         }
         return ""
     }
     
     public static func getThumbnailURL(id:String)->String?{
         if let value = ProcessInfo.processInfo.environment["THUMBNAIL_BASE_URL"] {
-            return value+getThumbnailEndPoint+id;
+            return value+getThumbnailEndPoint+id
         }
         return ""
     }

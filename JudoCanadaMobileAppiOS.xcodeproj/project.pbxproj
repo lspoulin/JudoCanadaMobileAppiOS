@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F30C0AD20C8766A007D67C0 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0AC20C8766A007D67C0 /* CalendarTableViewCell.swift */; };
+		4F30C0AF20C877BB007D67C0 /* CalendarTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */; };
+		4F30C0B120C87930007D67C0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B020C87930007D67C0 /* Event.swift */; };
+		4F30C0B320C977B2007D67C0 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B220C977B2007D67C0 /* MonthYearPickerView.swift */; };
 		4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CC20A218060048FB1F /* ApiHelper.swift */; };
 		4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CE20A21D860048FB1F /* userdix.png */; };
 		4F3BC5DB20A21D890048FB1F /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CF20A21D870048FB1F /* fav.png */; };
@@ -66,6 +70,10 @@
 
 /* Begin PBXFileReference section */
 		02F542E0685F9A9A3077CBC9 /* Pods-JudoCanadaMobileAppiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudoCanadaMobileAppiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JudoCanadaMobileAppiOS/Pods-JudoCanadaMobileAppiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4F30C0AC20C8766A007D67C0 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableVC.swift; sourceTree = "<group>"; };
+		4F30C0B020C87930007D67C0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4F30C0B220C977B2007D67C0 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
 		4F3BC5CC20A218060048FB1F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		4F3BC5CE20A21D860048FB1F /* userdix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userdix.png; sourceTree = "<group>"; };
 		4F3BC5CF20A21D870048FB1F /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
@@ -140,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F30C0AB20C87627007D67C0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4F30C0AC20C8766A007D67C0 /* CalendarTableViewCell.swift */,
+				4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
 		4FA21A9220B46045007B5C85 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +279,7 @@
 		4FB72C3020A0F41F00AD3FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F30C0AB20C87627007D67C0 /* Calendar */,
 				4FA21A9220B46045007B5C85 /* Registration */,
 				4FB1CB2B20A62EE900C4EA75 /* Stats */,
 				4FB20A5920A39B8E004FBB81 /* Video */,
@@ -277,6 +295,7 @@
 				4FB72C1E20A09FEF00AD3FCB /* ApiManager.swift */,
 				4F3BC5CC20A218060048FB1F /* ApiHelper.swift */,
 				4FB72C2A20A0EDE200AD3FCB /* ColorTheme.swift */,
+				4F30C0B220C977B2007D67C0 /* MonthYearPickerView.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -287,6 +306,7 @@
 				4FB20A5620A39AF2004FBB81 /* Video.swift */,
 				4FB72C2020A0B96000AD3FCB /* Post.swift */,
 				4FB1CB3220A6667500C4EA75 /* User.swift */,
+				4F30C0B020C87930007D67C0 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -504,9 +524,12 @@
 				4FB1CB3320A6667600C4EA75 /* User.swift in Sources */,
 				4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */,
 				4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */,
+				4F30C0AF20C877BB007D67C0 /* CalendarTableVC.swift in Sources */,
+				4F30C0B120C87930007D67C0 /* Event.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,
 				4FB0A2FC20BC331800148CDD /* SignUpVC.swift in Sources */,
 				4FB1CB3720A6672A00C4EA75 /* StatsTableViewController.swift in Sources */,
+				4F30C0B320C977B2007D67C0 /* MonthYearPickerView.swift in Sources */,
 				4FB1CB2820A6271A00C4EA75 /* VideoTableViewCell.swift in Sources */,
 				4FB72C0120A08A4700AD3FCB /* JudoCanadaMobileAppiOS.xcdatamodeld in Sources */,
 				4FB72BF920A08A4700AD3FCB /* AppDelegate.swift in Sources */,
@@ -514,6 +537,7 @@
 				4FB72C2120A0B96000AD3FCB /* Post.swift in Sources */,
 				4FB72C2B20A0EDE200AD3FCB /* ColorTheme.swift in Sources */,
 				4FB1CB3120A6322B00C4EA75 /* VideoPlayerViewController.swift in Sources */,
+				4F30C0AD20C8766A007D67C0 /* CalendarTableViewCell.swift in Sources */,
 				4FB1CB3520A666FC00C4EA75 /* StatsTableViewCell.swift in Sources */,
 				4FB20A5720A39AF2004FBB81 /* Video.swift in Sources */,
 				4FB1CB2F20A631E100C4EA75 /* UIView+DMAdditions.swift in Sources */,
