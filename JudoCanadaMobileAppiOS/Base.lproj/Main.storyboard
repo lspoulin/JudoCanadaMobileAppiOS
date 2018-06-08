@@ -279,6 +279,7 @@
                                     <outlet property="productDescription" destination="niS-Ep-GBh" id="4Yq-OI-EOn"/>
                                     <outlet property="productImag" destination="j0x-Dm-4z2" id="ZPo-CO-xDr"/>
                                     <outlet property="productName" destination="GZE-uK-6cU" id="a7w-i0-ivJ"/>
+                                    <segue destination="IgS-1t-woN" kind="show" id="LGp-4a-6cK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -295,6 +296,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUh-PS-Zzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664.8" y="1449.6251874062971"/>
+        </scene>
+        <!--ProductVC-->
+        <scene sceneID="t9P-CX-mNo">
+            <objects>
+                <viewController id="IgS-1t-woN" customClass="ProductVC" customModule="JudoCanadaMobileAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VjI-Ya-N2K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5I6-oe-JGv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="202.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5I6-oe-JGv" secondAttribute="height" multiplier="375:202" id="0Dj-1a-neX"/>
+                                    <constraint firstAttribute="height" constant="202" id="v4u-EI-HE2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7FM-CF-HiR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="bXW-1k-6E4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.070588235289999995" green="0.23529411759999999" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puz-f8-3Zm">
+                                <rect key="frame" x="0.0" y="266.5" width="375" height="351.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="324.5" id="I1X-t0-6Rk"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.0" green="0.31372549020000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="052-Td-LLL"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="top" secondItem="5I6-oe-JGv" secondAttribute="bottom" id="37H-cs-UTJ"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="bottom" secondItem="0WP-5Y-RE4" secondAttribute="bottom" id="3Wl-Rm-Yu9"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="top" secondItem="0WP-5Y-RE4" secondAttribute="top" id="5W5-WY-FCr"/>
+                            <constraint firstItem="0WP-5Y-RE4" firstAttribute="bottom" secondItem="puz-f8-3Zm" secondAttribute="bottom" id="8Gk-Ry-82T"/>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="B7C-1C-72a"/>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="top" secondItem="0WP-5Y-RE4" secondAttribute="top" id="DP4-eo-Ef5"/>
+                            <constraint firstItem="0WP-5Y-RE4" firstAttribute="bottom" secondItem="7FM-CF-HiR" secondAttribute="bottom" id="K4i-Sl-quZ"/>
+                            <constraint firstItem="0WP-5Y-RE4" firstAttribute="trailing" secondItem="7FM-CF-HiR" secondAttribute="trailing" id="K6b-9J-mop"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="trailing" secondItem="0WP-5Y-RE4" secondAttribute="trailing" id="OH8-Bt-OqK"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="OIl-Le-l4c"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="top" secondItem="5I6-oe-JGv" secondAttribute="bottom" id="Vr2-lc-ky0"/>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="trailing" secondItem="0WP-5Y-RE4" secondAttribute="trailing" id="ZSO-0B-tFK"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="top" secondItem="5I6-oe-JGv" secondAttribute="bottom" id="cQP-fg-3dq"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="dYO-xR-GOH"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="trailing" secondItem="0WP-5Y-RE4" secondAttribute="trailing" id="eOF-dR-EFB"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="width" secondItem="5I6-oe-JGv" secondAttribute="height" multiplier="375:202" id="fwj-Fe-gvF"/>
+                            <constraint firstItem="puz-f8-3Zm" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="lp3-Tn-D3u"/>
+                            <constraint firstItem="0WP-5Y-RE4" firstAttribute="trailing" secondItem="puz-f8-3Zm" secondAttribute="trailing" id="md4-st-g0P"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="top" secondItem="0WP-5Y-RE4" secondAttribute="top" id="p98-c4-De2"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="trailing" secondItem="0WP-5Y-RE4" secondAttribute="trailing" id="ph4-VM-yxV"/>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="bottom" secondItem="0WP-5Y-RE4" secondAttribute="bottom" id="uzP-KI-2UZ"/>
+                            <constraint firstItem="5I6-oe-JGv" firstAttribute="leading" secondItem="0WP-5Y-RE4" secondAttribute="leading" id="vyZ-dQ-Asz"/>
+                            <constraint firstItem="7FM-CF-HiR" firstAttribute="top" secondItem="0WP-5Y-RE4" secondAttribute="top" id="wtN-1Y-7kb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0WP-5Y-RE4"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgProduct" destination="5I6-oe-JGv" id="43R-LY-pPi"/>
+                        <outlet property="productDescription" destination="puz-f8-3Zm" id="ClV-Zq-vrf"/>
+                        <outlet property="productName" destination="7FM-CF-HiR" id="xlN-pH-avy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07b-cf-bQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544" y="1457"/>
         </scene>
         <!--Shop-->
         <scene sceneID="wrN-mA-Iem">
@@ -519,7 +595,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hW9-u4-Dq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="685.90704647676171"/>
+            <point key="canvasLocation" x="1953" y="706"/>
         </scene>
         <!--Judo Canada Mobile App-->
         <scene sceneID="yrh-iw-IfK">
