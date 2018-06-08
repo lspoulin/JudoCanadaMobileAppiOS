@@ -11,6 +11,9 @@
 		4F30C0AF20C877BB007D67C0 /* CalendarTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */; };
 		4F30C0B120C87930007D67C0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B020C87930007D67C0 /* Event.swift */; };
 		4F30C0B320C977B2007D67C0 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B220C977B2007D67C0 /* MonthYearPickerView.swift */; };
+		4F30C0B520C9D25E007D67C0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B420C9D25E007D67C0 /* Product.swift */; };
+		4F30C0B820C9D4E3007D67C0 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B720C9D4E3007D67C0 /* ProductTableViewCell.swift */; };
+		4F30C0BA20C9D4FD007D67C0 /* ProductTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C0B920C9D4FD007D67C0 /* ProductTableVC.swift */; };
 		4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CC20A218060048FB1F /* ApiHelper.swift */; };
 		4F3BC5DA20A21D890048FB1F /* userdix.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CE20A21D860048FB1F /* userdix.png */; };
 		4F3BC5DB20A21D890048FB1F /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3BC5CF20A21D870048FB1F /* fav.png */; };
@@ -74,6 +77,9 @@
 		4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableVC.swift; sourceTree = "<group>"; };
 		4F30C0B020C87930007D67C0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4F30C0B220C977B2007D67C0 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
+		4F30C0B420C9D25E007D67C0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4F30C0B720C9D4E3007D67C0 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		4F30C0B920C9D4FD007D67C0 /* ProductTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableVC.swift; sourceTree = "<group>"; };
 		4F3BC5CC20A218060048FB1F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		4F3BC5CE20A21D860048FB1F /* userdix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userdix.png; sourceTree = "<group>"; };
 		4F3BC5CF20A21D870048FB1F /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
@@ -155,6 +161,15 @@
 				4F30C0AE20C877BB007D67C0 /* CalendarTableVC.swift */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		4F30C0B620C9D4BD007D67C0 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				4F30C0B720C9D4E3007D67C0 /* ProductTableViewCell.swift */,
+				4F30C0B920C9D4FD007D67C0 /* ProductTableVC.swift */,
+			);
+			name = Shop;
 			sourceTree = "<group>";
 		};
 		4FA21A9220B46045007B5C85 /* Registration */ = {
@@ -279,6 +294,7 @@
 		4FB72C3020A0F41F00AD3FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F30C0B620C9D4BD007D67C0 /* Shop */,
 				4F30C0AB20C87627007D67C0 /* Calendar */,
 				4FA21A9220B46045007B5C85 /* Registration */,
 				4FB1CB2B20A62EE900C4EA75 /* Stats */,
@@ -307,6 +323,7 @@
 				4FB72C2020A0B96000AD3FCB /* Post.swift */,
 				4FB1CB3220A6667500C4EA75 /* User.swift */,
 				4F30C0B020C87930007D67C0 /* Event.swift */,
+				4F30C0B420C9D25E007D67C0 /* Product.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -520,10 +537,13 @@
 				4FB1CB2620A626D300C4EA75 /* VideoTableViewController.swift in Sources */,
 				4FB72C1F20A09FEF00AD3FCB /* ApiManager.swift in Sources */,
 				4FB72C2520A0C72A00AD3FCB /* PostTableViewController.swift in Sources */,
+				4F30C0BA20C9D4FD007D67C0 /* ProductTableVC.swift in Sources */,
 				4FB72BFB20A08A4700AD3FCB /* PostViewController.swift in Sources */,
 				4FB1CB3320A6667600C4EA75 /* User.swift in Sources */,
 				4FB1CB2D20A6319D00C4EA75 /* ShareActivityItemProvider.swift in Sources */,
 				4FA21A9420B46070007B5C85 /* LoginSignupVC.swift in Sources */,
+				4F30C0B820C9D4E3007D67C0 /* ProductTableViewCell.swift in Sources */,
+				4F30C0B520C9D25E007D67C0 /* Product.swift in Sources */,
 				4F30C0AF20C877BB007D67C0 /* CalendarTableVC.swift in Sources */,
 				4F30C0B120C87930007D67C0 /* Event.swift in Sources */,
 				4F3BC5CD20A218060048FB1F /* ApiHelper.swift in Sources */,

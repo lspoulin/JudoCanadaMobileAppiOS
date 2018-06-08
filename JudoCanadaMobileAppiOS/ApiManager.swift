@@ -16,6 +16,7 @@ let getVideoEndPoint = "user/JudoCanada/videos"
 let getUserEndPoint = "users/"
 let getThumbnailEndPoint = "thumbnail/video/"
 let getEventEndPoint = "events/"
+let getProductEndPoint = "products/"
 
 class ApiManager<M:Mappable>{
     
@@ -36,6 +37,14 @@ class ApiManager<M:Mappable>{
     public func getEvents() -> String?{
         if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
             let test = value+getEventEndPoint
+            return test
+        }
+        return ""
+    }
+    
+    public func getProductURL() -> String?{
+        if let value = ProcessInfo.processInfo.environment["USER_BASE_URL"] {
+            let test = value+getProductEndPoint
             return test
         }
         return ""

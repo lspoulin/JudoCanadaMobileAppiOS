@@ -13,12 +13,14 @@ class ApiHelper{
     private var apiManagerVideo:ApiManager<VideoList>?
     private var apiManagerUser:ApiManager<User>?
     private var apiManagerEvent:ApiManager<Event>?
+    private var apiManagerProduct:ApiManager<Product>?
     
     init(){
         apiManagerPost = ApiManager<Post>()
         apiManagerVideo = ApiManager<VideoList>()
         apiManagerUser = ApiManager<User>()
         apiManagerEvent = ApiManager<Event>()
+        apiManagerProduct = ApiManager<Product>()
     }
     
     public func getPosts(completion: @escaping ( _ mappable:Any) -> ()){
@@ -36,6 +38,11 @@ class ApiHelper{
         api.getMappableArray(getURL: (api.getEvents())!, completion:completion )
     }
     
+    public func getProducts(completion: @escaping ( _ mappable:Any) -> ()){
+        guard let api:ApiManager<Product> = apiManagerProduct else  {return}
+        api.getMappableArray(getURL: (api.getProductURL())!, completion:completion )
+    }
+    
     public func getUsers(completion: @escaping ( _ mappable:Any) -> ()){
         guard let api:ApiManager<User> = apiManagerUser else  {return}
         api.getMappableArray(getURL: (api.getUsers())!, completion:completion )
@@ -45,4 +52,6 @@ class ApiHelper{
         guard let api:ApiManager<User> = apiManagerUser else  {return}
         api.postMappable(postURL: api.getUsers()!, parameters: ["":"" as AnyObject], completion: completion)
     }
+    
+    
 }
